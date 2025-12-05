@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project A — Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #1e1e1e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #262626, #4d4d4d);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.15s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Project A</div>
+        <ul>
+            <li><a href="draft_simulator.html">Draft Simulator</a></li>
+            <li><a href="draft_evaluator.html">Draft Evaluator</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Welcome to Project A</h1>
+        <p>Your AI-assisted toolkit for drafting, evaluating, and managing esports data.</p>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="features">
+        <div class="card">
+            <h3>Draft Simulator</h3>
+            <p>Simulate competitive drafts, plan strategies, and visualize pick orders.</p>
+            <a href="draft_simulator.html">Open →</a>
+        </div>
+
+        <div class="card">
+            <h3>Draft Evaluator</h3>
+            <p>Evaluate team compositions using scoring, synergy analysis, and counters.</p>
+            <a href="draft_evaluator.html">Open →</a>
+        </div>
+
+        <div class="card">
+            <h3>Attendance Tracker</h3>
+            <p>Track player attendance for scrims, tournaments, and practice sessions.</p>
+            <a href="attendance.html">Open →</a>
+        </div>
+
+        <div class="card">
+            <h3>Player Data</h3>
+            <p>View and manage your roster, roles, past performance, and player info.</p>
+            <a href="player_data.html">Open →</a>
+        </div>
+
+        <div class="card">
+            <h3>Liquipedia Scraper</h3>
+            <p>Import esports data from Liquipedia to use in your app.</p>
+            <a href="liquipedia.html">Open →</a>
+        </div>
+    </section>
+
+</body>
+</html>
