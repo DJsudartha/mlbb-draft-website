@@ -1,0 +1,36 @@
+Season,Date,Time,MatchID,MatchGame,TeamA_Name,TeamB_Name,SeriesScore,TeamA_Win,TeamA_Hero1,TeamA_Hero2,TeamA_Hero3,TeamA_Hero4,TeamA_Hero5,TeamB_Hero1,TeamB_Hero2,TeamB_Hero3,TeamB_Hero4,TeamB_Hero5
+MPL PH S16 (Playoffs sample),2025-10-22,14:00,TL_vs_FAL_Bo5,1,Team Liquid,Team Falcon,3-1,1,Yu Zhong,Yi Sun-shin,Zhuxin,Ruby,Gatotkaca,Alice,Lancelot,Kimmy,Claude,Grock
+MPL PH S16 (Playoffs sample),2025-10-22,14:00,TL_vs_FAL_Bo5,2,Team Liquid,Team Falcon,3-1,1,Alice,Lancelot,Lunox,Harith,Gatotkaca,Arlott,Fredrinn,Kimmy,Granger,Mathilda
+MPL PH S16 (Playoffs sample),2025-10-22,14:00,TL_vs_FAL_Bo5,3,Team Liquid,Team Falcon,3-1,0,Alice,Lancelot,Yve,Granger,Hylos,Uranus,Yi Sun-shin,Kimmy,Bane,Khaleed
+MPL PH S16 (Playoffs sample),2025-10-22,14:00,TL_vs_FAL_Bo5,4,Team Liquid,Team Falcon,3-1,1,Yu Zhong,Lancelot,Lunox,Esmeralda,Hilda,Uranus,Yi Sun-shin,Kimmy,Chou,Badang
+MPL PH S16 (Playoffs sample),2025-10-22,18:00,TM_vs_TNC_Bo5,1,Twisted Minds,TNC Pro Team,2-3,0,Alice,Leomord,Zhuxin,Harith,Kalea,Lapu-Lapu,Lancelot,Valentina,Wanwan,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-22,18:00,TM_vs_TNC_Bo5,2,Twisted Minds,TNC Pro Team,2-3,1,Phoveus,Lancelot,Selena,Harith,Gatotkaca,Hilda,Yi Sun-shin,Lunox,Granger,Khaleed
+MPL PH S16 (Playoffs sample),2025-10-22,18:00,TM_vs_TNC_Bo5,3,Twisted Minds,TNC Pro Team,2-3,0,Alice,Hayabusa,Kagura,Granger,Gatotkaca,Yu Zhong,Lancelot,Kimmy,Obsidia,Hilda
+MPL PH S16 (Playoffs sample),2025-10-22,18:00,TM_vs_TNC_Bo5,4,Twisted Minds,TNC Pro Team,2-3,1,Gloo,Hayabusa,Kimmy,Lapu-Lapu,Gatotkaca,Arlott,Lancelot,Lunox,Chou,Grock
+MPL PH S16 (Playoffs sample),2025-10-22,18:00,TM_vs_TNC_Bo5,5,Twisted Minds,TNC Pro Team,2-3,0,Hilda,Hayabusa,Valentina,Beatrix,Kalea,Phoveus,Fanny,Lunox,Wanwan,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-23,14:00,ONIC_vs_TL_Bo5,1,ONIC Philippines,Team Liquid,0-3,0,Cici,Joy,Kimmy,Granger,Hylos,Phoveus,Yi Sun-shin,Pharsa,Harith,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-23,14:00,ONIC_vs_TL_Bo5,2,ONIC Philippines,Team Liquid,0-3,0,Lapu-Lapu,Yi Sun-shin,Valentina,Moskov,Gatotkaca,Yu Zhong,Lancelot,Lunox,Ruby,Khaleed
+MPL PH S16 (Playoffs sample),2025-10-23,14:00,ONIC_vs_TL_Bo5,3,ONIC Philippines,Team Liquid,0-3,0,Uranus,Yi Sun-shin,Zhuxin,Harith,Baxia,Alice,Lancelot,Selena,Claude,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-23,18:00,AUR_vs_TNC_Bo5,1,Aurora,TNC Pro Team,3-2,1,Uranus,Lancelot,Kimmy,Cici,Grock,Lapu-Lapu,Yi Sun-shin,Valentina,Obsidia,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-23,18:00,AUR_vs_TNC_Bo5,2,Aurora,TNC Pro Team,3-2,0,Lapu-Lapu,Yi Sun-shin,Novaria,Ruby,Grock,Yu Zhong,Lancelot,Lunox,Chou,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-23,18:00,AUR_vs_TNC_Bo5,3,Aurora,TNC Pro Team,3-2,1,Cici,Hayabusa,Kimmy,Granger,Gatotkaca,X.Borg,Yi Sun-shin,Lunox,Lapu-Lapu,Grock
+MPL PH S16 (Playoffs sample),2025-10-23,18:00,AUR_vs_TNC_Bo5,4,Aurora,TNC Pro Team,3-2,0,Esmeralda,Lancelot,Pharsa,Brody,Gatotkaca,Hilda,Yi Sun-shin,Lunox,Cici,Khaleed
+MPL PH S16 (Playoffs sample),2025-10-23,18:00,AUR_vs_TNC_Bo5,5,Aurora,TNC Pro Team,3-2,1,Lapu-Lapu,Hayabusa,Cecilion,Cici,Hylos,Alice,Yi Sun-shin,Lunox,Brody,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-24,18:00,ONIC_vs_TNC_Bo5,1,ONIC Philippines,TNC Pro Team,2-3,1,Arlott,Yi Sun-shin,Selena,Cici,Kalea,Lapu-Lapu,Joy,Lunox,X.Borg,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-24,18:00,ONIC_vs_TNC_Bo5,2,ONIC Philippines,TNC Pro Team,2-3,0,Uranus,Yi Sun-shin,Valentina,Ruby,Khaleed,Phoveus,Lancelot,Lunox,Bane,Hilda
+MPL PH S16 (Playoffs sample),2025-10-24,18:00,ONIC_vs_TNC_Bo5,3,ONIC Philippines,TNC Pro Team,2-3,0,Arlott,Akai,Kimmy,Cici,Gatotkaca,Yu Zhong,Joy,Zhuxin,X.Borg,Baxia
+MPL PH S16 (Playoffs sample),2025-10-24,18:00,ONIC_vs_TNC_Bo5,4,ONIC Philippines,TNC Pro Team,2-3,1,Gatotkaca,Yi Sun-shin,Lunox,Natan,Chou,Alice,Lancelot,Valentina,Esmeralda,Khaleed
+MPL PH S16 (Playoffs sample),2025-10-24,18:00,ONIC_vs_TNC_Bo5,5,ONIC Philippines,TNC Pro Team,2-3,0,Phoveus,Yi Sun-shin,Pharsa,Harith,Gatotkaca,Uranus,Lancelot,Lunox,Granger,Grock
+MPL PH S16 (Playoffs sample),2025-10-24,14:00,TL_vs_AUR_Bo5,1,Team Liquid,Aurora,1-3,0,Arlott,Yi Sun-shin,Selena,Chou,Gatotkaca,Lapu-Lapu,Lancelot,Novaria,Granger,Hylos
+MPL PH S16 (Playoffs sample),2025-10-24,14:00,TL_vs_AUR_Bo5,2,Team Liquid,Aurora,1-3,1,Alice,Hayabusa,Zhuxin,Moskov,Hylos,Arlott,Fredrinn,Kimmy,Granger,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-24,14:00,TL_vs_AUR_Bo5,3,Team Liquid,Aurora,1-3,0,Alice,Hayabusa,Lunox,Cici,Hylos,Lapu-Lapu,Fredrinn,Yve,Granger,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-24,14:00,TL_vs_AUR_Bo5,4,Team Liquid,Aurora,1-3,0,Arlott,Baxia,Zhuxin,Moskov,Mathilda,Phoveus,Fredrinn,Yve,Ixia,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-25,16:00,TL_vs_TNC_Bo7,1,Team Liquid,TNC Pro Team,4-1,1,Lapu-Lapu,Fredrinn,Zhuxin,Harith,Khaleed,Alice,Yi Sun-shin,Novaria,Granger,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-25,16:00,TL_vs_TNC_Bo7,2,Team Liquid,TNC Pro Team,4-1,0,Edith,Yi Sun-shin,Pharsa,Ruby,Gatotkaca,Yu Zhong,Fanny,Kimmy,Bane,Hylos
+MPL PH S16 (Playoffs sample),2025-10-25,16:00,TL_vs_TNC_Bo7,3,Team Liquid,TNC Pro Team,4-1,1,Arlott,Yi Sun-shin,Pharsa,Ruby,Hilda,Lapu-Lapu,Joy,Kimmy,Chou,Grock
+MPL PH S16 (Playoffs sample),2025-10-25,16:00,TL_vs_TNC_Bo7,4,Team Liquid,TNC Pro Team,4-1,1,Lapu-Lapu,Fredrinn,Pharsa,Granger,Gatotkaca,Arlott,Yi Sun-shin,Lunox,Chou,Grock
+MPL PH S16 (Playoffs sample),2025-10-25,16:00,TL_vs_TNC_Bo7,5,Team Liquid,TNC Pro Team,4-1,1,Alice,Lancelot,Lunox,Ruby,Chip,Hilda,Hayabusa,Zhuxin,Claude,Grock
+MPL PH S16 (Playoffs sample),2025-10-26,16:00,AUR_vs_TL_Bo7,1,Aurora,Team Liquid,0-4,0,Lapu-Lapu,Fredrinn,Pharsa,Granger,Franco,Terizla,Baxia,Yve,Harith,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-26,16:00,AUR_vs_TL_Bo7,2,Aurora,Team Liquid,0-4,0,Cici,Barats,Cecilion,Harith,Gatotkaca,Lapu-Lapu,Fredrinn,Pharsa,Granger,Hilda
+MPL PH S16 (Playoffs sample),2025-10-26,16:00,AUR_vs_TL_Bo7,3,Aurora,Team Liquid,0-4,0,Alice,Yi Sun-shin,Selena,Granger,Hylos,Lapu-Lapu,Hayabusa,Pharsa,Harith,Gatotkaca
+MPL PH S16 (Playoffs sample),2025-10-26,16:00,AUR_vs_TL_Bo7,4,Aurora,Team Liquid,0-4,0,Terizla,Akai,Cecilion,Harith,Gatotkaca,Lapu-Lapu,Fredrinn,Luo Yi,Granger,Hilda
