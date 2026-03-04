@@ -4,28 +4,7 @@ import type { Hero, DraftPhase } from "../types/draft.ts";
 import { heroes } from "../data/heroes";
 import { X, ChevronRight, ChevronLeft } from "lucide-react";
 
-export function DraftInterface() {
-  const [currentPhase, setCurrentPhase] =
-    useState<DraftPhase>("ban1");
-  const [currentTeam, setCurrentTeam] = useState<
-    "blue" | "red"
-  >("blue");
-  const [timeRemaining, setTimeRemaining] = useState(30);
-
-  const [blueBans, setBlueBans] = useState<Hero[]>([]);
-  const [redBans, setRedBans] = useState<Hero[]>([]);
-  const [bluePicks, setBluePicks] = useState<Hero[]>([]);
-  const [redPicks, setRedPicks] = useState<Hero[]>([]);
-
-  const [bannedHeroIds, setBannedHeroIds] = useState<
-    Set<number>
-  >(new Set());
-  const [pickedHeroIds, setPickedHeroIds] = useState<
-    Set<number>
-  >(new Set());
-
-  // Draft phase order for MLBB (simplified)
-  const draftOrder: {
+const draftOrder: {
     phase: DraftPhase;
     team: "blue" | "red";
     action: "ban" | "pick";
@@ -59,16 +38,28 @@ export function DraftInterface() {
     { phase: "pick1", team: "red", action: "pick" },
   ];
 
-  const [currentDraftIndex, setCurrentDraftIndex] = useState(0);
+export function DraftInterface() {
+  const [timeRemaining, setTimeRemaining] = useState(30);
 
-  useEffect(() => {
-    if (currentDraftIndex < draftOrder.length) {
-      const current = draftOrder[currentDraftIndex];
-      setCurrentPhase(current.phase);
-      setCurrentTeam(current.team);
-      setTimeRemaining(30);
-    }
-  }, [currentDraftIndex]);
+  const [blueBans, setBlueBans] = useState<Hero[]>([]);
+  const [redBans, setRedBans] = useState<Hero[]>([]);
+  const [bluePicks, setBluePicks] = useState<Hero[]>([]);
+  const [redPicks, setRedPicks] = useState<Hero[]>([]);
+
+  const [bannedHeroIds, setBannedHeroIds] = useState<
+    Set<number>
+  >(new Set());
+  const [pickedHeroIds, setPickedHeroIds] = useState<
+    Set<number>
+  >(new Set());
+
+  const [currentDraftIndex, setCurrentDraftIndex] = useState(0);
+  const currentStep =
+    currentDraftIndex < draftOrder.length
+      ? draftOrder[currentDraftIndex]
+      : null;
+  const currentTeam = currentStep ? currentStep.team : null;
+  const currentAction = currentStep ? currentStep.action : "complete";
 
   useEffect(() => {
     if (currentDraftIndex >= draftOrder.length) return;
@@ -121,11 +112,6 @@ export function DraftInterface() {
       }
     }
   };
-
-  const currentAction =
-    currentDraftIndex < draftOrder.length
-      ? draftOrder[currentDraftIndex].action
-      : "complete";
 
   // Center label (Ban / Pick / Complete)
   const centerLabel =
