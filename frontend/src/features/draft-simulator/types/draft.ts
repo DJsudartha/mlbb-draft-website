@@ -5,7 +5,8 @@ export type Role =
   | "Assassin"
   | "Mage"
   | "Marksman"
-  | "Support";
+  | "Support"
+  | "Other";
 
 // Hero model
 export interface Hero {

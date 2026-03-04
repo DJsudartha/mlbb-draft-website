@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Hero, Role } from "../types/draft";
+import type { Hero, Role } from "../types/draft";
 import { HeroCard } from "./HeroCard";
 
 interface HeroGridProps {

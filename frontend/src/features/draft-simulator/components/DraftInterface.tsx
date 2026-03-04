@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { HeroGrid } from "./HeroGrid";
-import { Hero, DraftPhase } from "../types/draft";
+import type { Hero, DraftPhase } from "../types/draft.ts";
 import { heroes } from "../data/heroes";
 import { X, ChevronRight, ChevronLeft } from "lucide-react";
 

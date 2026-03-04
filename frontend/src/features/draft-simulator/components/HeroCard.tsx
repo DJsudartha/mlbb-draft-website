@@ -1,5 +1,5 @@
 import { X, Check } from "lucide-react";
-import { Hero } from "../types/draft";
+import type { Hero } from "../types/draft";
 
 interface HeroCardProps {
   hero: Hero;
