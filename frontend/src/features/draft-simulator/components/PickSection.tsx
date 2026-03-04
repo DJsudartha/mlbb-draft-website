@@ -1,5 +1,5 @@
 import { User, ChevronRight, ChevronLeft } from "lucide-react";
-import { Hero } from "../types/draft";
+import type { Hero } from "../types/draft";
 
 interface PickSectionProps {
   picks: Hero[];

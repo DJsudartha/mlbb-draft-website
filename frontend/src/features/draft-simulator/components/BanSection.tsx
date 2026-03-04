@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import { Hero } from '../types/draft';
+import type { Hero } from '../types/draft';
 
 interface BanSectionProps {
   bans: Hero[];
