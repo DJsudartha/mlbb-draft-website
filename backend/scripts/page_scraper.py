@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 
 liquipedia_base_url = 'https://liquipedia.net/mobilelegends/'
 mlbb_official_base_url = 'https://www.mobilelegends.com/en/hero-stats'
+DEFAULT_TOURNAMENT_NAME = "M7_World_Championship"
+DEFAULT_STAGE = "Knockout_Stage"
 
 # Function to scrape hero data from Liquipedia by giving the tournament's name
 def get_liquipedia_hero_data(tournament_name, stage=""):
@@ -21,21 +23,36 @@ def get_liquipedia_hero_data(tournament_name, stage=""):
 
     s = soup.find_all('tr', class_='character-stats-row')
     for row in s:
-        hero = row.find_all('td')[1].find_all('a')[1].text.strip()
-        win_rate = row.find_all('td')[5].text.strip()
-        pick_rate = row.find_all('td')[2].text.strip()
-        ban_rate = row.find_all('td')[16].text.strip()
+        columns = row.find_all('td')
+        hero = columns[1].find_all('a')[1].text.strip()
+        picks = columns[2].text.strip()
+        wins = columns[3].text.strip()
+        losses = columns[4].text.strip()
+        win_rate = columns[5].text.strip()
+        pick_rate = columns[6].text.strip()
+        bans = columns[15].text.strip()
+        ban_rate = columns[16].text.strip()
+        presence_count = columns[17].text.strip()
+        presence_rate = columns[18].text.strip()
         hero_data[hero] = {
+            'picks': picks,
+            'wins': wins,
+            'losses': losses,
             'win_rate': win_rate,
             'pick_rate': pick_rate,
-            'ban_rate': ban_rate
+            'bans': bans,
+            'ban_rate': ban_rate,
+            'presence_count': presence_count,
+            'presence_rate': presence_rate,
         }
     return hero_data
     
 
 if __name__ == "__main__":
-    tournament_name = "M7_World_Championship"
-    hero_data = get_liquipedia_hero_data(tournament_name, "Knockout_Stage")
+    tournament_name = DEFAULT_TOURNAMENT_NAME
+    hero_data = get_liquipedia_hero_data(tournament_name, DEFAULT_STAGE)
     for hero, stats in hero_data.items():
-        print(f"{hero}: Win Rate: {stats['win_rate']}, Pick Rate: {stats['pick_rate']}, Ban Rate: {stats['ban_rate']}")
-
+        print(
+            f"{hero}: Picks: {stats['picks']}, Pick Rate: {stats['pick_rate']}, "
+            f"Win Rate: {stats['win_rate']}, Ban Rate: {stats['ban_rate']}"
+        )
