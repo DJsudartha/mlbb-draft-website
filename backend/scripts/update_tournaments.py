@@ -1,27 +1,33 @@
-from services.liquipedia_api import fetch_table
-from services.tournament_finder import discover_tournaments_via_match_table
-from services.file_utils import load_json, save_json
+from backend.services.liquipedia_api import fetch_table
+from backend.services.tournament_finder import discover_tournaments_via_match_table, update_active_flags,  merge_tournaments
+from backend.services.file_utils import load_json, save_json
 
 from pathlib import Path
+from datetime import date, timedelta
 import os
 from dotenv import load_dotenv
 
 
 if __name__ == "__main__":
     load_dotenv()
-    api_key = os.getenv("LIQUIPEDIA_API_KEY")
+    api_key = os.getenv("LIQUIPEDIA_API_KEY2")
+    today = date.today()
+    months = 5 # Change this for different ranges
 
     tournaments = discover_tournaments_via_match_table(
         api_key=api_key,
         wiki="mobilelegends",
-        start_date="2023-01-01",
-        end_date="2024-01-01",
+        start_date=(today - timedelta(days=months * 30)).strftime("%Y-%m-%d"), # Look back 3 months for tournaments
+        end_date=today.strftime("%Y-%m-%d"),
         allowed_tiers={"1", "2"}, # S and A Tier tournaments only
     )
 
     existing = load_json(Path("backend/data/tournaments.json"))
-    merged = existing + tournaments  # you’ll later replace with merge()
+    
+    merged = merge_tournaments(existing, tournaments)
 
-    save_json(Path("backend/data/tournaments.json"), merged)
+    updated = update_active_flags(merged, months=months) 
 
-    print(f"Saved {len(merged)} tournaments")
+    save_json(Path("backend/data/tournaments.json"), updated)
+
+    print(f"Saved {len(updated)} tournaments")
