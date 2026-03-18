@@ -13,7 +13,7 @@ if __name__ == "__main__":
         raise ValueError("LIQUIPEDIA_API_KEY not set")
     
     tournaments = load_json(Path("backend/data/tournaments.json"))
-    output_dir = Path("backend/data/processed")
+    output_dir = Path("backend/data/raw")
     output_dir.mkdir(parents=True,exist_ok=True)
     for tournament in tournaments:
         if not tournament.get("active"):
