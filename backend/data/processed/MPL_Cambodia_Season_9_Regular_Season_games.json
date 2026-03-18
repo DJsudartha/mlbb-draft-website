@@ -1,0 +1,7004 @@
+{
+  "tournament": "MPL Cambodia Season 9",
+  "pagename": "MPL/Cambodia/Season_9/Regular_Season",
+  "series": [
+    {
+      "date": "2025-09-27 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "CFU Gaming",
+      "red_team_name": "Team Max",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Chou",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Badang",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Chip",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Bane",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Bane",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 4
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kagura",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 2
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 4
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Franco",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Hylos",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 3
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Chou",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Esmeralda",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Minotaur",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Moskov",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27 11:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "PRO Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Gloo",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chip",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Khaleed",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Angela",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 4
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-27 11:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Angela",
+              "ban_order": 1
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 2
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 3
+            },
+            {
+              "hero": "Khaleed",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Claude",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Franco",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Phoveus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Gloo",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Natan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chip",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Phoveus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 4
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 2
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28 08:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Hilda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 3
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Moskov",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28 08:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "PRO Esports",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Natan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gloo",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Ruby",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chip",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-28 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Helcurt",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Helcurt",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gloo",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Max",
+      "red_team_name": "PRO Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chip",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 4
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "See You Soon",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Hayabusa",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 3
+            },
+            {
+              "hero": "Moskov",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Alice",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 4
+            },
+            {
+              "hero": "Obsidia",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Wanwan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Franco",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Alice",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kaja",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kadita",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Alice",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04 11:15:00",
+      "patch": "2.1.18",
+      "blue_team_name": "CFU Gaming",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Novaria",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Esmeralda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 4
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-04 11:15:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Nolan",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Esmeralda",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Alucard",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Phoveus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Selena",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Novaria",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Badang",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Guinevere",
+              "ban_order": 4
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Helcurt",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Chip",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Guinevere",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "See You Soon",
+      "red_team_name": "Team Max",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 3
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 4
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Max",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Wanwan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 4
+            },
+            {
+              "hero": "Franco",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "CFU Gaming",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Wanwan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Arlott",
+              "ban_order": 1
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Franco",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-05 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Faramis",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Mathilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Angela",
+              "ban_order": 1
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Gloo",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Novaria",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Badang",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Phoveus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Franco",
+              "ban_order": 4
+            },
+            {
+              "hero": "Bruno",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Wanwan",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "See You Soon",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Angela",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Obsidia",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Franco",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Moskov",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 3
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Wanwan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Franco",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Beatrix",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Karrie",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 3
+            },
+            {
+              "hero": "Beatrix",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 4
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Alpha",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Karrie",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Beatrix",
+              "ban_order": 4
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 2
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Guinevere",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-11 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "Team Max",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Wanwan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Franco",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Chip",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gloo",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Chip",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 4
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "See You Soon",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Edith",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Gloo",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Obsidia",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Bruno",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yve",
+              "ban_order": 1
+            },
+            {
+              "hero": "Fanny",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 4
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Arlott",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 4
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Terizla",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chip",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Arlott",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 4
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Beatrix",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Arlott",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "Team Max",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Guinevere",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-12 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Max",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Brody",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Badang",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Mathilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Badang",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Franco",
+              "ban_order": 4
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Badang",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yve",
+              "ban_order": 1
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Granger",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "See You Soon",
+      "red_team_name": "PRO Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Yve",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Brody",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 11:15:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Alice",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Karrie",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Angela",
+              "ban_order": 1
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 3
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "X.Borg",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Zhuxin",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 3
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 4
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-25 11:15:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Kalea",
+              "ban_order": 1
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Chip",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "Galaxy Legends",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Esmeralda",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Selena",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yve",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 4
+            },
+            {
+              "hero": "Bane",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Chou",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Joy",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Yve",
+              "ban_order": 1
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 4
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Max",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Alice",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 4
+            },
+            {
+              "hero": "Khaleed",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Esmeralda",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Ruby",
+              "ban_order": 4
+            },
+            {
+              "hero": "Obsidia",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "CFU Gaming",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Ruby",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 3
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kimmy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Pharsa",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-26 11:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Khaleed",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 3
+            },
+            {
+              "hero": "Chou",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 4
+            },
+            {
+              "hero": "Gloo",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-01 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "PRO Esports",
+      "red_team_name": "Team Flash KH",
+      "games": [
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Cici",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Ruby",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Lunox",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "X.Borg",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Kalea",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Uranus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-01 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Flash KH",
+      "red_team_name": "PRO Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Lunox",
+              "ban_order": 1
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 4
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Esmeralda",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Alice",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Uranus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Ruby",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Lunox",
+              "ban_order": 2
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 4
+            },
+            {
+              "hero": "Selena",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-01 08:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Duck Rice Esports",
+      "red_team_name": "Team Max",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Lancelot",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Moskov",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 4
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Uranus",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Yve",
+              "ban_order": 3
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 4
+            },
+            {
+              "hero": "Wanwan",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 3,
+          "blue_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Claude",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Natan",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 3
+            },
+            {
+              "hero": "Akai",
+              "ban_order": 4
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Cici",
+              "ban_order": 1
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-01 08:45:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Team Max",
+      "red_team_name": "Duck Rice Esports",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Valentina",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Kimmy",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Ruby",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Grock",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Granger",
+              "ban_order": 1
+            },
+            {
+              "hero": "Chip",
+              "ban_order": 2
+            },
+            {
+              "hero": "Mathilda",
+              "ban_order": 3
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Baxia",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 4
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-02 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "CFU Gaming",
+      "red_team_name": "Valhalla",
+      "games": [
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fanny",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Kalea",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 4
+            },
+            {
+              "hero": "Fredrinn",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 3
+            },
+            {
+              "hero": "Phoveus",
+              "ban_order": 4
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-02 06:00:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Valhalla",
+      "red_team_name": "CFU Gaming",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Phoveus",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Akai",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hilda",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Arlott",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Cici",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Guinevere",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Grock",
+              "ban_order": 1
+            },
+            {
+              "hero": "Kalea",
+              "ban_order": 2
+            },
+            {
+              "hero": "Lancelot",
+              "ban_order": 3
+            },
+            {
+              "hero": "Hylos",
+              "ban_order": 4
+            },
+            {
+              "hero": "Alice",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Gatotkaca",
+              "ban_order": 1
+            },
+            {
+              "hero": "Baxia",
+              "ban_order": 2
+            },
+            {
+              "hero": "Zhuxin",
+              "ban_order": 3
+            },
+            {
+              "hero": "Lapu-Lapu",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 5
+            }
+          ],
+          "winner": "red"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-02 08:30:00",
+      "patch": "2.1.18",
+      "blue_team_name": "Galaxy Legends",
+      "red_team_name": "See You Soon",
+      "games": [
+        {
+          "game_no": 1,
+          "blue_team": [
+            {
+              "hero": "Yu Zhong",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Baxia",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Granger",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Chou",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Lapu-Lapu",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Fredrinn",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Pharsa",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Harith",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Hilda",
+              "ban_order": 1
+            },
+            {
+              "hero": "Angela",
+              "ban_order": 2
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 3
+            },
+            {
+              "hero": "Joy",
+              "ban_order": 4
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Hayabusa",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Arlott",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        },
+        {
+          "game_no": 2,
+          "blue_team": [
+            {
+              "hero": "Gloo",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Hayabusa",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Yve",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "Bane",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Hylos",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "red_team": [
+            {
+              "hero": "Alice",
+              "slot": 1,
+              "role": "EXP"
+            },
+            {
+              "hero": "Yi Sun-shin",
+              "slot": 2,
+              "role": "Jungle"
+            },
+            {
+              "hero": "Zhuxin",
+              "slot": 3,
+              "role": "Mid"
+            },
+            {
+              "hero": "X.Borg",
+              "slot": 4,
+              "role": "Gold"
+            },
+            {
+              "hero": "Gatotkaca",
+              "slot": 5,
+              "role": "Roam"
+            }
+          ],
+          "blue_bans": [
+            {
+              "hero": "Fanny",
+              "ban_order": 1
+            },
+            {
+              "hero": "Hilda",
+              "ban_order": 2
+            },
+            {
+              "hero": "Grock",
+              "ban_order": 3
+            },
+            {
+              "hero": "Yu Zhong",
+              "ban_order": 4
+            },
+            {
+              "hero": "Uranus",
+              "ban_order": 5
+            }
+          ],
+          "red_bans": [
+            {
+              "hero": "Lancelot",
+              "ban_order": 1
+            },
+            {
+              "hero": "Cici",
+              "ban_order": 2
+            },
+            {
+              "hero": "Granger",
+              "ban_order": 3
+            },
+            {
+              "hero": "Esmeralda",
+              "ban_order": 4
+            },
+            {
+              "hero": "Harith",
+              "ban_order": 5
+            }
+          ],
+          "winner": "blue"
+        }
+      ]
+    }
+  ]
+}

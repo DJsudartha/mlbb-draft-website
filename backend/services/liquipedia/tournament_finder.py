@@ -1,20 +1,15 @@
-import re
+from backend.services.parser import slugify
 from datetime import datetime, timedelta
 
-from backend.services.liquipedia_api import fetch_table
+from backend.services.liquipedia.liquipedia_api import fetch_table
 
-def build_match_conditions(start_date: str, end_date: str, allowed_tiers: set[str]) -> str:
+def build_tournament_conditions(start_date: str, end_date: str, allowed_tiers: set[str]) -> str:
     tier_clause = " OR ".join(f"[[liquipediatier::{tier}]]" for tier in sorted(allowed_tiers))
     return (
         f"[[date::>{start_date}]] AND "
         f"[[date::<{end_date}]] AND "
         f"({tier_clause})"
     )
-
-def slugify(text: str) -> str:
-    text = text.lower().strip()
-    text = re.sub(r"[^a-z0-9]+", "_", text)
-    return text.strip("_")
 
 def normalize_tournament_row(row: dict, wiki: str) -> dict:
     pagename = row.get("pagename") or row.get("parent") or row.get("name")
@@ -31,14 +26,14 @@ def normalize_tournament_row(row: dict, wiki: str) -> dict:
         "active": True,
     }
 
-def discover_tournaments_via_match_table(
+def get_tournaments_by_date(
     api_key: str,
     wiki: str,
     start_date: str,
     end_date: str,
     allowed_tiers: set[str],
 ) -> list[dict]:
-    conditions = build_match_conditions(start_date, end_date, allowed_tiers)
+    conditions = build_tournament_conditions(start_date, end_date, allowed_tiers)
     data = fetch_table(api_key, "match", wiki, conditions, limit=1000)
 
     seen = {}

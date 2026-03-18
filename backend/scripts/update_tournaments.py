@@ -1,5 +1,5 @@
-from backend.services.liquipedia_api import fetch_table
-from backend.services.tournament_finder import discover_tournaments_via_match_table, update_active_flags,  merge_tournaments
+from backend.services.liquipedia.liquipedia_api import fetch_table
+from backend.services.liquipedia.tournament_finder import get_tournaments_by_date, update_active_flags,  merge_tournaments
 from backend.services.file_utils import load_json, save_json
 
 from pathlib import Path
@@ -10,11 +10,11 @@ from dotenv import load_dotenv
 
 if __name__ == "__main__":
     load_dotenv()
-    api_key = os.getenv("LIQUIPEDIA_API_KEY2")
+    api_key = os.getenv("LIQUIPEDIA_API_KEY")
     today = date.today()
     months = 5 # Change this for different ranges
 
-    tournaments = discover_tournaments_via_match_table(
+    tournaments = get_tournaments_by_date(
         api_key=api_key,
         wiki="mobilelegends",
         start_date=(today - timedelta(days=months * 30)).strftime("%Y-%m-%d"), # Look back 3 months for tournaments
