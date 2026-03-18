@@ -1,6 +1,6 @@
 from backend.services.liquipedia.liquipedia_api import fetch_table
 from backend.services.liquipedia.tournament_finder import get_tournaments_by_date, update_active_flags,  merge_tournaments
-from backend.services.file_utils import load_json, save_json
+from backend.services.common.file_utils import load_json, save_json
 
 from pathlib import Path
 from datetime import date, timedelta
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     load_dotenv()
     api_key = os.getenv("LIQUIPEDIA_API_KEY")
     today = date.today()
-    months = 5 # Change this for different ranges
+    months = 1 # Change this for different ranges
 
     tournaments = get_tournaments_by_date(
         api_key=api_key,

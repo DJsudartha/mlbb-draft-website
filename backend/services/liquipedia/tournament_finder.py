@@ -1,4 +1,4 @@
-from backend.services.parser import slugify
+from backend.services.common.parser import slugify
 from datetime import datetime, timedelta
 
 from backend.services.liquipedia.liquipedia_api import fetch_table

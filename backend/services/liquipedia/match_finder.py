@@ -1,5 +1,5 @@
 from backend.services.liquipedia.liquipedia_api import fetch_table
-from backend.services.parser import slugify
+from backend.services.common.parser import slugify
 from backend.services.enums.role import SLOT_TO_ROLE
 
 def extract_list(prefix: str, count: int, source: dict) -> list[str]:

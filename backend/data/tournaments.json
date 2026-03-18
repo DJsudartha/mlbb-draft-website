@@ -52,7 +52,7 @@
     "startdate": "2026-01-18 07:00:00",
     "enddate": "2026-01-25 11:00:00",
     "conditions": "[[pagename::M7_World_Championship/Knockout_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "m7_world_championship",
@@ -63,7 +63,7 @@
     "startdate": "2026-01-10 07:00:00",
     "enddate": "2026-01-17 11:45:00",
     "conditions": "[[pagename::M7_World_Championship/Swiss_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "m7_world_championship",
@@ -74,7 +74,7 @@
     "startdate": "2026-01-03 07:00:00",
     "enddate": "2026-01-06 11:45:00",
     "conditions": "[[pagename::M7_World_Championship/Wildcard]]",
-    "active": true
+    "active": false
   },
   {
     "name": "games_of_the_future_2025",
@@ -85,7 +85,7 @@
     "startdate": "2025-12-20 08:00:00",
     "enddate": "2025-12-23 14:00:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "games_of_the_future_2025",
@@ -96,7 +96,7 @@
     "startdate": "2025-12-18 10:00:00",
     "enddate": "2025-12-19 15:45:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -107,7 +107,7 @@
     "startdate": "2025-12-17 08:00:00",
     "enddate": "2025-12-17 08:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Knockout_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -118,7 +118,7 @@
     "startdate": "2025-12-17 03:30:00",
     "enddate": "2025-12-17 03:30:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Knockout_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -129,7 +129,7 @@
     "startdate": "2025-12-14 03:30:00",
     "enddate": "2025-12-14 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -140,7 +140,7 @@
     "startdate": "2025-12-13 03:30:00",
     "enddate": "2025-12-13 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "m7_world_championship_japan_qualifier",
@@ -151,7 +151,7 @@
     "startdate": "2025-11-16 03:00:00",
     "enddate": "2025-11-16 09:00:00",
     "conditions": "[[pagename::M7_World_Championship/Japan]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_super_league_season_2_playoffs",
@@ -162,7 +162,7 @@
     "startdate": "2025-11-15 04:30:00",
     "enddate": "2025-11-16 08:30:00",
     "conditions": "[[pagename::MLBB_Super_League/Myanmar/Season_2/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_continental_championships_season_6",
@@ -173,7 +173,7 @@
     "startdate": "2025-11-14 13:00:00",
     "enddate": "2025-11-16 15:00:00",
     "conditions": "[[pagename::MLBB_Continental_Championships/Season_6/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "sibol_national_team_selection_for_asian_games_2026_2025",
@@ -184,7 +184,7 @@
     "startdate": "2025-11-14 00:00:00",
     "enddate": "2025-11-23 12:00:00",
     "conditions": "[[pagename::SIBOL_National_Team_Selection/Asian_Games_2026/2025_Qualifiers]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_malaysia_season_16",
@@ -195,7 +195,7 @@
     "startdate": "2025-11-13 07:00:00",
     "enddate": "2025-11-16 09:30:00",
     "conditions": "[[pagename::MPL/Malaysia/Season_16/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_cambodia_season_9",
@@ -206,7 +206,7 @@
     "startdate": "2025-11-13 06:00:00",
     "enddate": "2025-11-16 07:00:00",
     "conditions": "[[pagename::MPL/Cambodia/Season_9/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_china_masters_2025_season_1",
@@ -217,7 +217,7 @@
     "startdate": "2025-11-09 09:00:00",
     "enddate": "2025-11-16 11:30:00",
     "conditions": "[[pagename::MLBB_China_Masters/2025/Season_1/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_continental_championships_season_6",
@@ -228,7 +228,7 @@
     "startdate": "2025-11-01 11:00:00",
     "enddate": "2025-11-02 16:00:00",
     "conditions": "[[pagename::MLBB_Continental_Championships/Season_6/Play-in]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_super_league_season_2_play_ins",
@@ -239,7 +239,7 @@
     "startdate": "2025-11-01 04:30:00",
     "enddate": "2025-11-02 08:30:00",
     "conditions": "[[pagename::MLBB_Super_League/Myanmar/Season_2/Play-ins]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_singapore_season_10",
@@ -250,7 +250,7 @@
     "startdate": "2025-10-31 04:00:00",
     "enddate": "2025-11-02 09:00:00",
     "conditions": "[[pagename::MPL/Singapore/Season_10/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_indonesia_season_16",
@@ -261,7 +261,7 @@
     "startdate": "2025-10-29 06:00:00",
     "enddate": "2025-11-02 10:30:00",
     "conditions": "[[pagename::MPL/Indonesia/Season_16/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_super_league_season_2_last_chance",
@@ -272,7 +272,7 @@
     "startdate": "2025-10-26 08:30:00",
     "enddate": "2025-10-26 10:30:00",
     "conditions": "[[pagename::MLBB_Super_League/Myanmar/Season_2/Last_Chance]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_cambodia_season_9",
@@ -283,7 +283,7 @@
     "startdate": "2025-10-25 06:00:00",
     "enddate": "2025-11-02 08:30:00",
     "conditions": "[[pagename::MPL/Cambodia/Season_9/Regular_Season]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_philippines_season_16",
@@ -294,7 +294,7 @@
     "startdate": "2025-10-22 07:00:00",
     "enddate": "2025-10-26 09:00:00",
     "conditions": "[[pagename::MPL/Philippines/Season_16/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mpl_latam_s4_playoffs",

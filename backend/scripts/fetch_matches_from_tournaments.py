@@ -2,9 +2,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-from backend.services.file_utils import load_json, save_json
+from backend.services.common.file_utils import load_json, save_json
 from backend.services.liquipedia.match_finder import get_matches_from_tournament
-from backend.services.parser import pagename_to_filename
+from backend.services.common.parser import pagename_to_filename
 
 if __name__ == "__main__":
     load_dotenv()
@@ -13,7 +13,7 @@ if __name__ == "__main__":
         raise ValueError("LIQUIPEDIA_API_KEY not set")
     
     tournaments = load_json(Path("backend/data/tournaments.json"))
-    output_dir = Path("backend/data/raw")
+    output_dir = Path("backend/data/raw/tournaments")
     output_dir.mkdir(parents=True,exist_ok=True)
     for tournament in tournaments:
         if not tournament.get("active"):
