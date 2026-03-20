@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
+from typing import Any
 
-def load_json(path: Path) -> list[dict]:
+def load_json(path: Path) -> dict[str, Any] | list[Any]:
     if not path.exists():
         return []
     with path.open("r", encoding="utf-8") as f:

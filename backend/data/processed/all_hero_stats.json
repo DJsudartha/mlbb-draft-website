@@ -1,125 +1,127 @@
 {
-  "Aamon": {
-    "picked": 0,
-    "banned": 1,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {
-      "4": 1
-    },
-    "roles": {}
-  },
   "Akai": {
-    "picked": 3,
-    "banned": 0,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {},
+    "picked": 4,
+    "banned": 3,
+    "wins": 1,
+    "win_rate": 0.25,
+    "ban_orders": {
+      "3": 2,
+      "5": 1
+    },
     "roles": {
       "Jungle": {
         "picked": 3,
+        "wins": 1,
+        "win_rate": 0.3333
+      },
+      "Roam": {
+        "picked": 1,
         "wins": 0,
         "win_rate": 0.0
       }
     }
   },
   "Alice": {
-    "picked": 26,
-    "banned": 13,
-    "wins": 16,
-    "win_rate": 0.6154,
+    "picked": 12,
+    "banned": 11,
+    "wins": 4,
+    "win_rate": 0.3333,
     "ban_orders": {
       "1": 1,
-      "3": 1,
-      "4": 7,
-      "5": 4
-    },
-    "roles": {
-      "EXP": {
-        "picked": 25,
-        "wins": 16,
-        "win_rate": 0.64
-      },
-      "Gold": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Arlott": {
-    "picked": 12,
-    "banned": 10,
-    "wins": 6,
-    "win_rate": 0.5,
-    "ban_orders": {
+      "2": 1,
       "4": 3,
-      "5": 7
+      "5": 6
     },
     "roles": {
       "EXP": {
         "picked": 12,
-        "wins": 6,
-        "win_rate": 0.5
+        "wins": 4,
+        "win_rate": 0.3333
       }
     }
   },
-  "Atlas": {
-    "picked": 2,
-    "banned": 0,
-    "wins": 1,
-    "win_rate": 0.5,
-    "ban_orders": {},
+  "Angela": {
+    "picked": 0,
+    "banned": 1,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {
+      "4": 1
+    },
+    "roles": {}
+  },
+  "Arlott": {
+    "picked": 13,
+    "banned": 20,
+    "wins": 9,
+    "win_rate": 0.6923,
+    "ban_orders": {
+      "1": 5,
+      "4": 5,
+      "5": 10
+    },
+    "roles": {
+      "EXP": {
+        "picked": 13,
+        "wins": 9,
+        "win_rate": 0.6923
+      }
+    }
+  },
+  "Badang": {
+    "picked": 6,
+    "banned": 2,
+    "wins": 2,
+    "win_rate": 0.3333,
+    "ban_orders": {
+      "4": 1,
+      "5": 1
+    },
     "roles": {
       "Roam": {
+        "picked": 6,
+        "wins": 2,
+        "win_rate": 0.3333
+      }
+    }
+  },
+  "Baxia": {
+    "picked": 13,
+    "banned": 40,
+    "wins": 5,
+    "win_rate": 0.3846,
+    "ban_orders": {
+      "1": 17,
+      "2": 6,
+      "3": 9,
+      "4": 5,
+      "5": 3
+    },
+    "roles": {
+      "Jungle": {
+        "picked": 13,
+        "wins": 5,
+        "win_rate": 0.3846
+      }
+    }
+  },
+  "Benedetta": {
+    "picked": 2,
+    "banned": 1,
+    "wins": 1,
+    "win_rate": 0.5,
+    "ban_orders": {
+      "5": 1
+    },
+    "roles": {
+      "EXP": {
         "picked": 2,
         "wins": 1,
         "win_rate": 0.5
       }
     }
   },
-  "Badang": {
-    "picked": 7,
-    "banned": 4,
-    "wins": 3,
-    "win_rate": 0.4286,
-    "ban_orders": {
-      "4": 2,
-      "5": 2
-    },
-    "roles": {
-      "Roam": {
-        "picked": 7,
-        "wins": 3,
-        "win_rate": 0.4286
-      }
-    }
-  },
-  "Baxia": {
-    "picked": 22,
-    "banned": 40,
-    "wins": 13,
-    "win_rate": 0.5909,
-    "ban_orders": {
-      "1": 14,
-      "2": 17,
-      "3": 5,
-      "4": 4
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 17,
-        "wins": 10,
-        "win_rate": 0.5882
-      },
-      "Roam": {
-        "picked": 5,
-        "wins": 3,
-        "win_rate": 0.6
-      }
-    }
-  },
-  "Beatrix": {
+  "Bruno": {
     "picked": 1,
     "banned": 0,
     "wins": 0,
@@ -130,258 +132,198 @@
         "picked": 1,
         "wins": 0,
         "win_rate": 0.0
-      }
-    }
-  },
-  "Benedetta": {
-    "picked": 11,
-    "banned": 3,
-    "wins": 7,
-    "win_rate": 0.6364,
-    "ban_orders": {
-      "1": 2,
-      "2": 1
-    },
-    "roles": {
-      "EXP": {
-        "picked": 8,
-        "wins": 4,
-        "win_rate": 0.5
-      },
-      "Gold": {
-        "picked": 3,
-        "wins": 3,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Bruno": {
-    "picked": 5,
-    "banned": 2,
-    "wins": 2,
-    "win_rate": 0.4,
-    "ban_orders": {
-      "4": 2
-    },
-    "roles": {
-      "Gold": {
-        "picked": 5,
-        "wins": 2,
-        "win_rate": 0.4
       }
     }
   },
   "Cecilion": {
     "picked": 1,
     "banned": 0,
-    "wins": 1,
-    "win_rate": 1.0,
+    "wins": 0,
+    "win_rate": 0.0,
     "ban_orders": {},
     "roles": {
       "Mid": {
         "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
+        "wins": 0,
+        "win_rate": 0.0
       }
     }
   },
   "Chip": {
-    "picked": 2,
-    "banned": 6,
-    "wins": 1,
-    "win_rate": 0.5,
+    "picked": 5,
+    "banned": 5,
+    "wins": 4,
+    "win_rate": 0.8,
     "ban_orders": {
-      "1": 3,
-      "2": 2,
-      "3": 1
+      "4": 2,
+      "5": 3
     },
     "roles": {
       "Roam": {
-        "picked": 2,
-        "wins": 1,
-        "win_rate": 0.5
+        "picked": 5,
+        "wins": 4,
+        "win_rate": 0.8
       }
     }
   },
   "Chou": {
-    "picked": 18,
-    "banned": 17,
-    "wins": 10,
-    "win_rate": 0.5556,
+    "picked": 47,
+    "banned": 13,
+    "wins": 22,
+    "win_rate": 0.4681,
     "ban_orders": {
-      "3": 2,
-      "4": 5,
-      "5": 10
+      "1": 1,
+      "3": 3,
+      "4": 7,
+      "5": 2
     },
     "roles": {
       "Roam": {
-        "picked": 18,
-        "wins": 10,
-        "win_rate": 0.5556
+        "picked": 47,
+        "wins": 22,
+        "win_rate": 0.4681
       }
     }
   },
   "Cici": {
-    "picked": 18,
-    "banned": 14,
-    "wins": 8,
-    "win_rate": 0.4444,
+    "picked": 24,
+    "banned": 18,
+    "wins": 14,
+    "win_rate": 0.5833,
     "ban_orders": {
-      "1": 1,
-      "2": 2,
+      "2": 1,
+      "3": 5,
       "4": 6,
-      "5": 5
+      "5": 6
     },
     "roles": {
-      "EXP": {
-        "picked": 13,
-        "wins": 6,
-        "win_rate": 0.4615
-      },
       "Gold": {
-        "picked": 5,
-        "wins": 2,
-        "win_rate": 0.4
+        "picked": 15,
+        "wins": 8,
+        "win_rate": 0.5333
+      },
+      "EXP": {
+        "picked": 9,
+        "wins": 6,
+        "win_rate": 0.6667
       }
     }
   },
   "Claude": {
-    "picked": 35,
-    "banned": 22,
-    "wins": 19,
-    "win_rate": 0.5429,
+    "picked": 56,
+    "banned": 34,
+    "wins": 31,
+    "win_rate": 0.5536,
     "ban_orders": {
-      "1": 1,
-      "2": 1,
+      "1": 8,
+      "2": 15,
       "3": 5,
-      "4": 6,
-      "5": 9
+      "4": 3,
+      "5": 3
     },
     "roles": {
       "Gold": {
-        "picked": 35,
-        "wins": 19,
-        "win_rate": 0.5429
+        "picked": 56,
+        "wins": 31,
+        "win_rate": 0.5536
       }
     }
   },
   "Esmeralda": {
-    "picked": 8,
-    "banned": 11,
-    "wins": 2,
-    "win_rate": 0.25,
+    "picked": 26,
+    "banned": 31,
+    "wins": 9,
+    "win_rate": 0.3462,
     "ban_orders": {
-      "3": 1,
-      "4": 7,
-      "5": 3
+      "1": 1,
+      "2": 5,
+      "3": 2,
+      "4": 12,
+      "5": 11
     },
     "roles": {
       "EXP": {
-        "picked": 4,
-        "wins": 0,
-        "win_rate": 0.0
+        "picked": 18,
+        "wins": 7,
+        "win_rate": 0.3889
       },
       "Gold": {
-        "picked": 4,
+        "picked": 8,
         "wins": 2,
-        "win_rate": 0.5
+        "win_rate": 0.25
       }
     }
   },
   "Fanny": {
-    "picked": 10,
-    "banned": 30,
-    "wins": 4,
-    "win_rate": 0.4,
-    "ban_orders": {
-      "1": 21,
-      "2": 1,
-      "3": 6,
-      "4": 1,
-      "5": 1
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 10,
-        "wins": 4,
-        "win_rate": 0.4
-      }
-    }
-  },
-  "Faramis": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {},
-    "roles": {
-      "Mid": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Floryn": {
-    "picked": 0,
-    "banned": 1,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {
-      "4": 1
-    },
-    "roles": {}
-  },
-  "Franco": {
-    "picked": 0,
-    "banned": 1,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {
-      "4": 1
-    },
-    "roles": {}
-  },
-  "Fredrinn": {
     "picked": 8,
-    "banned": 22,
-    "wins": 4,
-    "win_rate": 0.5,
+    "banned": 60,
+    "wins": 5,
+    "win_rate": 0.625,
     "ban_orders": {
-      "1": 2,
-      "2": 7,
-      "3": 7,
-      "4": 4,
-      "5": 2
+      "1": 36,
+      "2": 12,
+      "3": 9,
+      "4": 3
     },
     "roles": {
       "Jungle": {
         "picked": 8,
-        "wins": 4,
-        "win_rate": 0.5
+        "wins": 5,
+        "win_rate": 0.625
+      }
+    }
+  },
+  "Faramis": {
+    "picked": 3,
+    "banned": 0,
+    "wins": 2,
+    "win_rate": 0.6667,
+    "ban_orders": {},
+    "roles": {
+      "Mid": {
+        "picked": 3,
+        "wins": 2,
+        "win_rate": 0.6667
+      }
+    }
+  },
+  "Fredrinn": {
+    "picked": 18,
+    "banned": 25,
+    "wins": 14,
+    "win_rate": 0.7778,
+    "ban_orders": {
+      "1": 5,
+      "2": 8,
+      "3": 4,
+      "4": 3,
+      "5": 5
+    },
+    "roles": {
+      "Jungle": {
+        "picked": 18,
+        "wins": 14,
+        "win_rate": 0.7778
       }
     }
   },
   "Freya": {
-    "picked": 18,
-    "banned": 70,
-    "wins": 11,
-    "win_rate": 0.6111,
+    "picked": 24,
+    "banned": 24,
+    "wins": 17,
+    "win_rate": 0.7083,
     "ban_orders": {
-      "1": 24,
-      "2": 18,
-      "3": 28
+      "1": 4,
+      "2": 7,
+      "3": 8,
+      "4": 1,
+      "5": 4
     },
     "roles": {
-      "EXP": {
-        "picked": 2,
-        "wins": 2,
-        "win_rate": 1.0
-      },
       "Gold": {
-        "picked": 15,
-        "wins": 9,
-        "win_rate": 0.6
+        "picked": 23,
+        "wins": 17,
+        "win_rate": 0.7391
       },
       "Jungle": {
         "picked": 1,
@@ -391,225 +333,340 @@
     }
   },
   "Gatotkaca": {
-    "picked": 18,
-    "banned": 12,
+    "picked": 23,
+    "banned": 13,
     "wins": 9,
-    "win_rate": 0.5,
+    "win_rate": 0.3913,
     "ban_orders": {
-      "2": 1,
-      "3": 1,
-      "4": 6,
-      "5": 4
+      "4": 7,
+      "5": 6
     },
     "roles": {
       "Roam": {
-        "picked": 18,
+        "picked": 23,
         "wins": 9,
-        "win_rate": 0.5
+        "win_rate": 0.3913
       }
     }
   },
   "Gloo": {
-    "picked": 5,
+    "picked": 8,
+    "banned": 4,
+    "wins": 4,
+    "win_rate": 0.5,
+    "ban_orders": {
+      "3": 1,
+      "4": 1,
+      "5": 2
+    },
+    "roles": {
+      "EXP": {
+        "picked": 7,
+        "wins": 3,
+        "win_rate": 0.4286
+      },
+      "Roam": {
+        "picked": 1,
+        "wins": 1,
+        "win_rate": 1.0
+      }
+    }
+  },
+  "Granger": {
+    "picked": 27,
     "banned": 5,
-    "wins": 1,
-    "win_rate": 0.2,
+    "wins": 12,
+    "win_rate": 0.4444,
     "ban_orders": {
       "4": 3,
       "5": 2
     },
     "roles": {
-      "EXP": {
-        "picked": 5,
-        "wins": 1,
-        "win_rate": 0.2
-      }
-    }
-  },
-  "Granger": {
-    "picked": 24,
-    "banned": 6,
-    "wins": 13,
-    "win_rate": 0.5417,
-    "ban_orders": {
-      "2": 2,
-      "4": 2,
-      "5": 2
-    },
-    "roles": {
       "Gold": {
-        "picked": 24,
-        "wins": 13,
-        "win_rate": 0.5417
+        "picked": 27,
+        "wins": 12,
+        "win_rate": 0.4444
       }
     }
   },
   "Grock": {
-    "picked": 18,
-    "banned": 39,
-    "wins": 9,
-    "win_rate": 0.5,
+    "picked": 19,
+    "banned": 65,
+    "wins": 14,
+    "win_rate": 0.7368,
     "ban_orders": {
-      "1": 4,
-      "2": 20,
-      "3": 11,
-      "4": 2,
+      "1": 21,
+      "2": 26,
+      "3": 12,
+      "4": 4,
       "5": 2
     },
     "roles": {
       "Roam": {
-        "picked": 18,
-        "wins": 9,
-        "win_rate": 0.5
+        "picked": 19,
+        "wins": 14,
+        "win_rate": 0.7368
       }
     }
   },
   "Guinevere": {
-    "picked": 35,
-    "banned": 35,
-    "wins": 20,
-    "win_rate": 0.5714,
+    "picked": 12,
+    "banned": 21,
+    "wins": 3,
+    "win_rate": 0.25,
     "ban_orders": {
-      "1": 12,
-      "2": 11,
-      "3": 3,
-      "4": 6,
-      "5": 3
+      "4": 14,
+      "5": 7
     },
     "roles": {
       "Jungle": {
-        "picked": 25,
-        "wins": 14,
-        "win_rate": 0.56
+        "picked": 10,
+        "wins": 2,
+        "win_rate": 0.2
       },
       "Roam": {
-        "picked": 10,
-        "wins": 6,
-        "win_rate": 0.6
-      }
-    }
-  },
-  "Gusion": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {},
-    "roles": {
-      "Mid": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Harith": {
-    "picked": 23,
-    "banned": 22,
-    "wins": 10,
-    "win_rate": 0.4348,
-    "ban_orders": {
-      "2": 1,
-      "3": 2,
-      "4": 10,
-      "5": 9
-    },
-    "roles": {
-      "Gold": {
-        "picked": 23,
-        "wins": 10,
-        "win_rate": 0.4348
-      }
-    }
-  },
-  "Harley": {
-    "picked": 8,
-    "banned": 5,
-    "wins": 4,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "4": 2,
-      "5": 3
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 8,
-        "wins": 4,
+        "picked": 2,
+        "wins": 1,
         "win_rate": 0.5
       }
     }
   },
-  "Hayabusa": {
-    "picked": 5,
-    "banned": 1,
-    "wins": 1,
-    "win_rate": 0.2,
+  "Harith": {
+    "picked": 19,
+    "banned": 14,
+    "wins": 9,
+    "win_rate": 0.4737,
     "ban_orders": {
+      "1": 1,
+      "4": 6,
+      "5": 7
+    },
+    "roles": {
+      "Gold": {
+        "picked": 19,
+        "wins": 9,
+        "win_rate": 0.4737
+      }
+    }
+  },
+  "Harley": {
+    "picked": 5,
+    "banned": 4,
+    "wins": 2,
+    "win_rate": 0.4,
+    "ban_orders": {
+      "4": 3,
       "5": 1
     },
     "roles": {
       "Jungle": {
         "picked": 5,
-        "wins": 1,
-        "win_rate": 0.2
+        "wins": 2,
+        "win_rate": 0.4
+      }
+    }
+  },
+  "Hayabusa": {
+    "picked": 12,
+    "banned": 13,
+    "wins": 6,
+    "win_rate": 0.5,
+    "ban_orders": {
+      "1": 1,
+      "3": 1,
+      "4": 4,
+      "5": 7
+    },
+    "roles": {
+      "Jungle": {
+        "picked": 12,
+        "wins": 6,
+        "win_rate": 0.5
       }
     }
   },
   "Helcurt": {
-    "picked": 3,
-    "banned": 2,
+    "picked": 2,
+    "banned": 10,
     "wins": 1,
-    "win_rate": 0.3333,
+    "win_rate": 0.5,
     "ban_orders": {
+      "1": 4,
+      "2": 4,
       "3": 1,
       "4": 1
     },
     "roles": {
       "Roam": {
-        "picked": 3,
+        "picked": 2,
         "wins": 1,
-        "win_rate": 0.3333
+        "win_rate": 0.5
       }
     }
   },
   "Hilda": {
-    "picked": 21,
-    "banned": 16,
-    "wins": 10,
-    "win_rate": 0.4762,
+    "picked": 29,
+    "banned": 33,
+    "wins": 14,
+    "win_rate": 0.4828,
     "ban_orders": {
-      "1": 2,
-      "2": 6,
-      "3": 8
+      "1": 6,
+      "2": 11,
+      "3": 8,
+      "4": 2,
+      "5": 6
     },
     "roles": {
       "Roam": {
-        "picked": 17,
-        "wins": 7,
-        "win_rate": 0.4118
+        "picked": 27,
+        "wins": 13,
+        "win_rate": 0.4815
       },
       "EXP": {
-        "picked": 4,
-        "wins": 3,
-        "win_rate": 0.75
+        "picked": 2,
+        "wins": 1,
+        "win_rate": 0.5
       }
     }
   },
   "Hylos": {
-    "picked": 21,
-    "banned": 10,
-    "wins": 9,
-    "win_rate": 0.4286,
+    "picked": 20,
+    "banned": 15,
+    "wins": 11,
+    "win_rate": 0.55,
     "ban_orders": {
-      "3": 2,
-      "4": 3,
+      "2": 3,
+      "3": 3,
+      "4": 4,
       "5": 5
     },
     "roles": {
       "Roam": {
         "picked": 20,
-        "wins": 9,
-        "win_rate": 0.45
+        "wins": 11,
+        "win_rate": 0.55
+      }
+    }
+  },
+  "Joy": {
+    "picked": 17,
+    "banned": 10,
+    "wins": 8,
+    "win_rate": 0.4706,
+    "ban_orders": {
+      "4": 4,
+      "5": 6
+    },
+    "roles": {
+      "Jungle": {
+        "picked": 17,
+        "wins": 8,
+        "win_rate": 0.4706
+      }
+    }
+  },
+  "Kadita": {
+    "picked": 4,
+    "banned": 1,
+    "wins": 2,
+    "win_rate": 0.5,
+    "ban_orders": {
+      "4": 1
+    },
+    "roles": {
+      "Mid": {
+        "picked": 4,
+        "wins": 2,
+        "win_rate": 0.5
+      }
+    }
+  },
+  "Kagura": {
+    "picked": 3,
+    "banned": 1,
+    "wins": 1,
+    "win_rate": 0.3333,
+    "ban_orders": {
+      "4": 1
+    },
+    "roles": {
+      "Mid": {
+        "picked": 3,
+        "wins": 1,
+        "win_rate": 0.3333
+      }
+    }
+  },
+  "Kaja": {
+    "picked": 1,
+    "banned": 1,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {
+      "5": 1
+    },
+    "roles": {
+      "Roam": {
+        "picked": 1,
+        "wins": 0,
+        "win_rate": 0.0
+      }
+    }
+  },
+  "Kalea": {
+    "picked": 26,
+    "banned": 57,
+    "wins": 14,
+    "win_rate": 0.5385,
+    "ban_orders": {
+      "1": 10,
+      "2": 18,
+      "3": 20,
+      "4": 7,
+      "5": 2
+    },
+    "roles": {
+      "Roam": {
+        "picked": 26,
+        "wins": 14,
+        "win_rate": 0.5385
+      }
+    }
+  },
+  "Karrie": {
+    "picked": 26,
+    "banned": 14,
+    "wins": 8,
+    "win_rate": 0.3077,
+    "ban_orders": {
+      "3": 1,
+      "4": 7,
+      "5": 6
+    },
+    "roles": {
+      "Gold": {
+        "picked": 26,
+        "wins": 8,
+        "win_rate": 0.3077
+      }
+    }
+  },
+  "Khaleed": {
+    "picked": 17,
+    "banned": 7,
+    "wins": 8,
+    "win_rate": 0.4706,
+    "ban_orders": {
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": 3
+    },
+    "roles": {
+      "Roam": {
+        "picked": 16,
+        "wins": 8,
+        "win_rate": 0.5
       },
       "EXP": {
         "picked": 1,
@@ -618,251 +675,188 @@
       }
     }
   },
-  "Irithel": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {},
-    "roles": {
-      "Gold": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Jawhead": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 1,
-    "win_rate": 1.0,
-    "ban_orders": {},
-    "roles": {
-      "Roam": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Joy": {
-    "picked": 6,
-    "banned": 8,
-    "wins": 3,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "4": 4,
-      "5": 4
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 6,
-        "wins": 3,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Kadita": {
-    "picked": 9,
-    "banned": 6,
-    "wins": 5,
-    "win_rate": 0.5556,
+  "Kimmy": {
+    "picked": 22,
+    "banned": 10,
+    "wins": 9,
+    "win_rate": 0.4091,
     "ban_orders": {
       "1": 1,
-      "4": 3,
-      "5": 2
-    },
-    "roles": {
-      "Mid": {
-        "picked": 9,
-        "wins": 5,
-        "win_rate": 0.5556
-      }
-    }
-  },
-  "Kagura": {
-    "picked": 1,
-    "banned": 2,
-    "wins": 1,
-    "win_rate": 1.0,
-    "ban_orders": {
-      "3": 1,
-      "4": 1
-    },
-    "roles": {
-      "Mid": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Kaja": {
-    "picked": 2,
-    "banned": 5,
-    "wins": 2,
-    "win_rate": 1.0,
-    "ban_orders": {
-      "4": 1,
-      "5": 4
-    },
-    "roles": {
-      "Roam": {
-        "picked": 2,
-        "wins": 2,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Kalea": {
-    "picked": 21,
-    "banned": 54,
-    "wins": 14,
-    "win_rate": 0.6667,
-    "ban_orders": {
-      "1": 9,
-      "2": 15,
-      "3": 10,
-      "4": 11,
-      "5": 9
-    },
-    "roles": {
-      "Roam": {
-        "picked": 21,
-        "wins": 14,
-        "win_rate": 0.6667
-      }
-    }
-  },
-  "Karrie": {
-    "picked": 32,
-    "banned": 26,
-    "wins": 16,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "1": 2,
       "2": 3,
-      "3": 4,
-      "4": 9,
-      "5": 8
-    },
-    "roles": {
-      "Gold": {
-        "picked": 32,
-        "wins": 16,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Khaleed": {
-    "picked": 24,
-    "banned": 15,
-    "wins": 8,
-    "win_rate": 0.3333,
-    "ban_orders": {
-      "2": 3,
-      "3": 4,
-      "4": 4,
-      "5": 4
-    },
-    "roles": {
-      "Roam": {
-        "picked": 24,
-        "wins": 8,
-        "win_rate": 0.3333
-      }
-    }
-  },
-  "Khufra": {
-    "picked": 2,
-    "banned": 1,
-    "wins": 1,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "5": 1
-    },
-    "roles": {
-      "Roam": {
-        "picked": 2,
-        "wins": 1,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Kimmy": {
-    "picked": 21,
-    "banned": 4,
-    "wins": 11,
-    "win_rate": 0.5238,
-    "ban_orders": {
-      "4": 1,
-      "5": 3
-    },
-    "roles": {
-      "Mid": {
-        "picked": 21,
-        "wins": 11,
-        "win_rate": 0.5238
-      }
-    }
-  },
-  "Lancelot": {
-    "picked": 11,
-    "banned": 8,
-    "wins": 6,
-    "win_rate": 0.5455,
-    "ban_orders": {
-      "2": 2,
       "3": 2,
       "4": 2,
       "5": 2
     },
     "roles": {
+      "Mid": {
+        "picked": 22,
+        "wins": 9,
+        "win_rate": 0.4091
+      }
+    }
+  },
+  "Lancelot": {
+    "picked": 21,
+    "banned": 22,
+    "wins": 9,
+    "win_rate": 0.4286,
+    "ban_orders": {
+      "1": 7,
+      "2": 6,
+      "3": 4,
+      "4": 4,
+      "5": 1
+    },
+    "roles": {
       "Jungle": {
-        "picked": 11,
-        "wins": 6,
-        "win_rate": 0.5455
+        "picked": 21,
+        "wins": 9,
+        "win_rate": 0.4286
       }
     }
   },
   "Lapu-Lapu": {
-    "picked": 34,
-    "banned": 4,
-    "wins": 14,
-    "win_rate": 0.4118,
+    "picked": 29,
+    "banned": 18,
+    "wins": 17,
+    "win_rate": 0.5862,
     "ban_orders": {
-      "4": 2,
-      "5": 2
+      "4": 7,
+      "5": 11
     },
     "roles": {
       "EXP": {
-        "picked": 34,
-        "wins": 14,
-        "win_rate": 0.4118
+        "picked": 29,
+        "wins": 17,
+        "win_rate": 0.5862
       }
     }
   },
   "Leomord": {
-    "picked": 45,
-    "banned": 18,
-    "wins": 24,
-    "win_rate": 0.5333,
+    "picked": 36,
+    "banned": 16,
+    "wins": 18,
+    "win_rate": 0.5,
     "ban_orders": {
-      "1": 4,
-      "2": 1,
-      "4": 2,
-      "5": 11
+      "2": 2,
+      "3": 5,
+      "4": 5,
+      "5": 4
     },
     "roles": {
       "Jungle": {
-        "picked": 45,
-        "wins": 24,
-        "win_rate": 0.5333
+        "picked": 36,
+        "wins": 18,
+        "win_rate": 0.5
       }
     }
   },
-  "Lesley": {
+  "Lukas": {
+    "picked": 1,
+    "banned": 0,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {},
+    "roles": {
+      "EXP": {
+        "picked": 1,
+        "wins": 0,
+        "win_rate": 0.0
+      }
+    }
+  },
+  "Lunox": {
+    "picked": 16,
+    "banned": 17,
+    "wins": 12,
+    "win_rate": 0.75,
+    "ban_orders": {
+      "1": 3,
+      "2": 1,
+      "4": 8,
+      "5": 5
+    },
+    "roles": {
+      "Mid": {
+        "picked": 14,
+        "wins": 11,
+        "win_rate": 0.7857
+      },
+      "Gold": {
+        "picked": 2,
+        "wins": 1,
+        "win_rate": 0.5
+      }
+    }
+  },
+  "Luo Yi": {
+    "picked": 7,
+    "banned": 14,
+    "wins": 4,
+    "win_rate": 0.5714,
+    "ban_orders": {
+      "2": 2,
+      "4": 5,
+      "5": 7
+    },
+    "roles": {
+      "Mid": {
+        "picked": 7,
+        "wins": 4,
+        "win_rate": 0.5714
+      }
+    }
+  },
+  "Lylia": {
+    "picked": 5,
+    "banned": 1,
+    "wins": 2,
+    "win_rate": 0.4,
+    "ban_orders": {
+      "4": 1
+    },
+    "roles": {
+      "Mid": {
+        "picked": 5,
+        "wins": 2,
+        "win_rate": 0.4
+      }
+    }
+  },
+  "Mathilda": {
+    "picked": 2,
+    "banned": 7,
+    "wins": 1,
+    "win_rate": 0.5,
+    "ban_orders": {
+      "2": 6,
+      "5": 1
+    },
+    "roles": {
+      "Roam": {
+        "picked": 2,
+        "wins": 1,
+        "win_rate": 0.5
+      }
+    }
+  },
+  "Minotaur": {
+    "picked": 1,
+    "banned": 1,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {
+      "4": 1
+    },
+    "roles": {
+      "Roam": {
+        "picked": 1,
+        "wins": 0,
+        "win_rate": 0.0
+      }
+    }
+  },
+  "Minsitthar": {
     "picked": 1,
     "banned": 0,
     "wins": 0,
@@ -871,203 +865,74 @@
     "roles": {
       "Gold": {
         "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Lukas": {
-    "picked": 3,
-    "banned": 0,
-    "wins": 3,
-    "win_rate": 1.0,
-    "ban_orders": {},
-    "roles": {
-      "Jungle": {
-        "picked": 3,
-        "wins": 3,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Lunox": {
-    "picked": 6,
-    "banned": 3,
-    "wins": 3,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "4": 1,
-      "5": 2
-    },
-    "roles": {
-      "Mid": {
-        "picked": 6,
-        "wins": 3,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Luo Yi": {
-    "picked": 1,
-    "banned": 1,
-    "wins": 1,
-    "win_rate": 1.0,
-    "ban_orders": {
-      "5": 1
-    },
-    "roles": {
-      "Mid": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Lylia": {
-    "picked": 6,
-    "banned": 1,
-    "wins": 2,
-    "win_rate": 0.3333,
-    "ban_orders": {
-      "5": 1
-    },
-    "roles": {
-      "Mid": {
-        "picked": 6,
-        "wins": 2,
-        "win_rate": 0.3333
-      }
-    }
-  },
-  "Masha": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 1,
-    "win_rate": 1.0,
-    "ban_orders": {},
-    "roles": {
-      "EXP": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Mathilda": {
-    "picked": 1,
-    "banned": 0,
-    "wins": 1,
-    "win_rate": 1.0,
-    "ban_orders": {},
-    "roles": {
-      "Roam": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
-  },
-  "Minotaur": {
-    "picked": 2,
-    "banned": 3,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {
-      "4": 1,
-      "5": 2
-    },
-    "roles": {
-      "Roam": {
-        "picked": 2,
         "wins": 0,
         "win_rate": 0.0
       }
     }
   },
   "Moskov": {
-    "picked": 14,
-    "banned": 9,
-    "wins": 7,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "3": 2,
-      "4": 2,
-      "5": 5
-    },
-    "roles": {
-      "Gold": {
-        "picked": 14,
-        "wins": 7,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Natan": {
-    "picked": 1,
+    "picked": 6,
     "banned": 1,
-    "wins": 0,
-    "win_rate": 0.0,
+    "wins": 2,
+    "win_rate": 0.3333,
     "ban_orders": {
-      "5": 1
+      "4": 1
     },
     "roles": {
       "Gold": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
+        "picked": 6,
+        "wins": 2,
+        "win_rate": 0.3333
       }
     }
   },
   "Nolan": {
-    "picked": 4,
-    "banned": 0,
-    "wins": 2,
-    "win_rate": 0.5,
-    "ban_orders": {},
+    "picked": 9,
+    "banned": 1,
+    "wins": 4,
+    "win_rate": 0.4444,
+    "ban_orders": {
+      "4": 1
+    },
     "roles": {
       "Jungle": {
-        "picked": 4,
-        "wins": 2,
-        "win_rate": 0.5
+        "picked": 9,
+        "wins": 4,
+        "win_rate": 0.4444
       }
     }
   },
   "Novaria": {
-    "picked": 1,
+    "picked": 2,
     "banned": 0,
     "wins": 0,
     "win_rate": 0.0,
     "ban_orders": {},
     "roles": {
-      "Roam": {
-        "picked": 1,
+      "Mid": {
+        "picked": 2,
         "wins": 0,
         "win_rate": 0.0
       }
     }
   },
   "Obsidia": {
-    "picked": 3,
-    "banned": 0,
-    "wins": 2,
-    "win_rate": 0.6667,
-    "ban_orders": {},
-    "roles": {
-      "Gold": {
-        "picked": 3,
-        "wins": 2,
-        "win_rate": 0.6667
-      }
-    }
+    "picked": 0,
+    "banned": 1,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {
+      "5": 1
+    },
+    "roles": {}
   },
   "Odette": {
     "picked": 1,
-    "banned": 3,
+    "banned": 1,
     "wins": 1,
     "win_rate": 1.0,
     "ban_orders": {
-      "4": 1,
-      "5": 2
+      "4": 1
     },
     "roles": {
       "Mid": {
@@ -1078,308 +943,315 @@
     }
   },
   "Pharsa": {
-    "picked": 48,
-    "banned": 20,
-    "wins": 25,
-    "win_rate": 0.5208,
+    "picked": 53,
+    "banned": 14,
+    "wins": 24,
+    "win_rate": 0.4528,
     "ban_orders": {
-      "1": 5,
-      "2": 2,
-      "3": 4,
-      "4": 4,
-      "5": 5
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 8
     },
     "roles": {
       "Mid": {
-        "picked": 48,
-        "wins": 25,
-        "win_rate": 0.5208
+        "picked": 53,
+        "wins": 24,
+        "win_rate": 0.4528
       }
     }
   },
   "Phoveus": {
-    "picked": 11,
-    "banned": 12,
-    "wins": 5,
-    "win_rate": 0.4545,
+    "picked": 15,
+    "banned": 8,
+    "wins": 6,
+    "win_rate": 0.4,
     "ban_orders": {
-      "2": 1,
-      "4": 5,
-      "5": 6
+      "4": 3,
+      "5": 5
     },
     "roles": {
       "EXP": {
-        "picked": 11,
-        "wins": 5,
-        "win_rate": 0.4545
+        "picked": 15,
+        "wins": 6,
+        "win_rate": 0.4
       }
     }
   },
   "Ruby": {
-    "picked": 6,
-    "banned": 2,
-    "wins": 3,
-    "win_rate": 0.5,
+    "picked": 3,
+    "banned": 4,
+    "wins": 2,
+    "win_rate": 0.6667,
     "ban_orders": {
-      "1": 1,
+      "4": 3,
       "5": 1
     },
     "roles": {
       "Gold": {
-        "picked": 4,
-        "wins": 2,
-        "win_rate": 0.5
-      },
-      "EXP": {
         "picked": 2,
         "wins": 1,
         "win_rate": 0.5
+      },
+      "EXP": {
+        "picked": 1,
+        "wins": 1,
+        "win_rate": 1.0
       }
     }
   },
-  "Silvanna": {
-    "picked": 0,
-    "banned": 1,
-    "wins": 0,
-    "win_rate": 0.0,
+  "Selena": {
+    "picked": 1,
+    "banned": 8,
+    "wins": 1,
+    "win_rate": 1.0,
     "ban_orders": {
-      "3": 1
+      "1": 1,
+      "2": 4,
+      "4": 2,
+      "5": 1
     },
-    "roles": {}
+    "roles": {
+      "Mid": {
+        "picked": 1,
+        "wins": 1,
+        "win_rate": 1.0
+      }
+    }
   },
   "Sora": {
-    "picked": 22,
-    "banned": 56,
-    "wins": 10,
-    "win_rate": 0.4545,
+    "picked": 37,
+    "banned": 46,
+    "wins": 19,
+    "win_rate": 0.5135,
     "ban_orders": {
-      "1": 20,
-      "2": 14,
-      "3": 15,
+      "1": 11,
+      "2": 15,
+      "3": 14,
       "4": 2,
-      "5": 5
+      "5": 4
     },
     "roles": {
       "Gold": {
-        "picked": 4,
-        "wins": 1,
-        "win_rate": 0.25
+        "picked": 13,
+        "wins": 9,
+        "win_rate": 0.6923
       },
       "EXP": {
-        "picked": 18,
-        "wins": 9,
-        "win_rate": 0.5
+        "picked": 24,
+        "wins": 10,
+        "win_rate": 0.4167
       }
     }
   },
   "Suyou": {
-    "picked": 13,
-    "banned": 8,
-    "wins": 6,
-    "win_rate": 0.4615,
-    "ban_orders": {
-      "4": 4,
-      "5": 4
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 13,
-        "wins": 6,
-        "win_rate": 0.4615
-      }
-    }
-  },
-  "Terizla": {
-    "picked": 3,
-    "banned": 0,
-    "wins": 0,
-    "win_rate": 0.0,
-    "ban_orders": {},
-    "roles": {
-      "EXP": {
-        "picked": 3,
-        "wins": 0,
-        "win_rate": 0.0
-      }
-    }
-  },
-  "Thamuz": {
     "picked": 3,
     "banned": 0,
     "wins": 2,
     "win_rate": 0.6667,
     "ban_orders": {},
     "roles": {
-      "EXP": {
+      "Jungle": {
         "picked": 3,
         "wins": 2,
         "win_rate": 0.6667
       }
     }
   },
-  "Tigreal": {
+  "Terizla": {
     "picked": 5,
     "banned": 0,
-    "wins": 4,
-    "win_rate": 0.8,
+    "wins": 3,
+    "win_rate": 0.6,
+    "ban_orders": {},
+    "roles": {
+      "EXP": {
+        "picked": 5,
+        "wins": 3,
+        "win_rate": 0.6
+      }
+    }
+  },
+  "Tigreal": {
+    "picked": 3,
+    "banned": 0,
+    "wins": 0,
+    "win_rate": 0.0,
     "ban_orders": {},
     "roles": {
       "Roam": {
-        "picked": 5,
-        "wins": 4,
-        "win_rate": 0.8
+        "picked": 3,
+        "wins": 0,
+        "win_rate": 0.0
       }
     }
   },
   "Uranus": {
-    "picked": 16,
-    "banned": 16,
-    "wins": 11,
-    "win_rate": 0.6875,
+    "picked": 29,
+    "banned": 34,
+    "wins": 16,
+    "win_rate": 0.5517,
     "ban_orders": {
-      "1": 2,
-      "2": 1,
-      "3": 2,
-      "4": 7,
-      "5": 4
+      "2": 2,
+      "3": 3,
+      "4": 17,
+      "5": 12
     },
     "roles": {
       "EXP": {
-        "picked": 16,
-        "wins": 11,
-        "win_rate": 0.6875
+        "picked": 28,
+        "wins": 15,
+        "win_rate": 0.5357
+      },
+      "Jungle": {
+        "picked": 1,
+        "wins": 1,
+        "win_rate": 1.0
       }
     }
   },
   "Valentina": {
-    "picked": 18,
-    "banned": 20,
-    "wins": 7,
-    "win_rate": 0.3889,
+    "picked": 21,
+    "banned": 18,
+    "wins": 9,
+    "win_rate": 0.4286,
     "ban_orders": {
-      "1": 5,
-      "2": 6,
-      "3": 7,
-      "4": 1,
-      "5": 1
-    },
-    "roles": {
-      "Mid": {
-        "picked": 16,
-        "wins": 6,
-        "win_rate": 0.375
-      },
-      "EXP": {
-        "picked": 2,
-        "wins": 1,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Yi Sun-shin": {
-    "picked": 25,
-    "banned": 40,
-    "wins": 11,
-    "win_rate": 0.44,
-    "ban_orders": {
-      "1": 8,
-      "2": 7,
-      "3": 17,
-      "4": 6,
-      "5": 2
-    },
-    "roles": {
-      "Jungle": {
-        "picked": 21,
-        "wins": 9,
-        "win_rate": 0.4286
-      },
-      "Gold": {
-        "picked": 4,
-        "wins": 2,
-        "win_rate": 0.5
-      }
-    }
-  },
-  "Yu Zhong": {
-    "picked": 16,
-    "banned": 24,
-    "wins": 8,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "1": 1,
-      "2": 4,
-      "3": 4,
-      "4": 10,
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 5,
       "5": 5
     },
     "roles": {
+      "Mid": {
+        "picked": 15,
+        "wins": 3,
+        "win_rate": 0.2
+      },
+      "Gold": {
+        "picked": 1,
+        "wins": 1,
+        "win_rate": 1.0
+      },
       "EXP": {
-        "picked": 16,
-        "wins": 8,
-        "win_rate": 0.5
+        "picked": 5,
+        "wins": 5,
+        "win_rate": 1.0
       }
     }
   },
-  "Yve": {
-    "picked": 35,
-    "banned": 21,
-    "wins": 15,
-    "win_rate": 0.4286,
-    "ban_orders": {
-      "1": 5,
-      "2": 6,
-      "3": 2,
-      "4": 4,
-      "5": 4
-    },
+  "X.Borg": {
+    "picked": 3,
+    "banned": 0,
+    "wins": 0,
+    "win_rate": 0.0,
+    "ban_orders": {},
     "roles": {
-      "Mid": {
-        "picked": 34,
-        "wins": 15,
-        "win_rate": 0.4412
+      "Gold": {
+        "picked": 2,
+        "wins": 0,
+        "win_rate": 0.0
       },
-      "Roam": {
+      "Jungle": {
         "picked": 1,
         "wins": 0,
         "win_rate": 0.0
       }
     }
   },
-  "Zetian": {
-    "picked": 15,
-    "banned": 19,
-    "wins": 7,
-    "win_rate": 0.4667,
+  "Yi Sun-shin": {
+    "picked": 44,
+    "banned": 24,
+    "wins": 24,
+    "win_rate": 0.5455,
     "ban_orders": {
-      "2": 2,
-      "3": 5,
-      "4": 7,
+      "1": 4,
+      "2": 5,
+      "3": 7,
+      "4": 3,
       "5": 5
     },
     "roles": {
+      "Jungle": {
+        "picked": 44,
+        "wins": 24,
+        "win_rate": 0.5455
+      }
+    }
+  },
+  "Yu Zhong": {
+    "picked": 30,
+    "banned": 35,
+    "wins": 13,
+    "win_rate": 0.4333,
+    "ban_orders": {
+      "1": 12,
+      "2": 5,
+      "3": 6,
+      "4": 4,
+      "5": 8
+    },
+    "roles": {
+      "EXP": {
+        "picked": 30,
+        "wins": 13,
+        "win_rate": 0.4333
+      }
+    }
+  },
+  "Yve": {
+    "picked": 33,
+    "banned": 60,
+    "wins": 18,
+    "win_rate": 0.5455,
+    "ban_orders": {
+      "1": 17,
+      "2": 12,
+      "3": 29,
+      "4": 1,
+      "5": 1
+    },
+    "roles": {
       "Mid": {
-        "picked": 15,
-        "wins": 7,
-        "win_rate": 0.4667
+        "picked": 33,
+        "wins": 18,
+        "win_rate": 0.5455
+      }
+    }
+  },
+  "Zetian": {
+    "picked": 10,
+    "banned": 1,
+    "wins": 6,
+    "win_rate": 0.6,
+    "ban_orders": {
+      "5": 1
+    },
+    "roles": {
+      "Mid": {
+        "picked": 10,
+        "wins": 6,
+        "win_rate": 0.6
       }
     }
   },
   "Zhuxin": {
-    "picked": 19,
-    "banned": 69,
-    "wins": 12,
-    "win_rate": 0.6316,
+    "picked": 28,
+    "banned": 72,
+    "wins": 17,
+    "win_rate": 0.6071,
     "ban_orders": {
-      "1": 30,
-      "2": 23,
-      "3": 16
+      "1": 22,
+      "2": 17,
+      "3": 32,
+      "4": 1
     },
     "roles": {
       "Mid": {
-        "picked": 19,
-        "wins": 12,
-        "win_rate": 0.6316
+        "picked": 28,
+        "wins": 17,
+        "win_rate": 0.6071
       }
     }
   }

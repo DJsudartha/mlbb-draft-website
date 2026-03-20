@@ -1,4 +1,5 @@
 from collections import defaultdict
+from datetime import datetime
 
 
 def make_hero_record() -> dict:
@@ -121,3 +122,24 @@ def merge_hero_stats(base: dict, incoming: dict) -> dict:
                 base[hero]["roles"][role]["wins"] += role_stats["wins"]
 
     return base
+
+def combine_all_hero_stats(hero_stats: dict, counter_matrix: dict, synergy_matrix: dict) -> dict:
+    all_heroes = set(hero_stats.keys()) | set(synergy_matrix.keys()) | set(counter_matrix.keys())
+
+    heroes = {}
+
+    for hero in all_heroes:
+        heroes[hero] = {
+            "stats": hero_stats.get(hero, {}),
+            "counter_matrix": counter_matrix.get(hero, {}),
+            "synergy_matrix": synergy_matrix.get(hero, {}),
+        }
+
+    return {
+        "metadata": {
+            "generated_at": datetime.now().isoformat(timespec="seconds"),
+            "source": "Liquipedia",
+            "version": 1,
+        },
+        "heroes": heroes,
+    }

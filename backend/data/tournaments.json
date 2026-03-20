@@ -8,7 +8,7 @@
     "startdate": "2026-03-14 03:30:00",
     "enddate": "2026-03-15 11:15:00",
     "conditions": "[[pagename::SIBOL_National_Team_Selection/Asian_Games_2026]]",
-    "active": true
+    "active": false
   },
   {
     "name": "mlbb_china_masters_season_2_qualifier",
@@ -19,7 +19,7 @@
     "startdate": "2026-03-05 21:00:00",
     "enddate": "2026-03-08 00:00:02",
     "conditions": "[[pagename::MLBB_China_Masters/Season_2/Closed_Qualifier]]",
-    "active": true
+    "active": false
   },
   {
     "name": "v_code_road_to_msl_season_3",
@@ -30,7 +30,7 @@
     "startdate": "2026-02-27 06:30:00",
     "enddate": "2026-03-01 06:30:00",
     "conditions": "[[pagename::V-Code/Road_To_MSL/Season_3/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "v_code_road_to_msl_season_3",
@@ -41,7 +41,7 @@
     "startdate": "2026-02-19 05:30:00",
     "enddate": "2026-02-25 09:30:00",
     "conditions": "[[pagename::V-Code/Road_To_MSL/Season_3/Swiss_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "m7_world_championship",
@@ -52,7 +52,7 @@
     "startdate": "2026-01-18 07:00:00",
     "enddate": "2026-01-25 11:00:00",
     "conditions": "[[pagename::M7_World_Championship/Knockout_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "m7_world_championship",
@@ -63,7 +63,7 @@
     "startdate": "2026-01-10 07:00:00",
     "enddate": "2026-01-17 11:45:00",
     "conditions": "[[pagename::M7_World_Championship/Swiss_Stage]]",
-    "active": false
+    "active": true
   },
   {
     "name": "m7_world_championship",
