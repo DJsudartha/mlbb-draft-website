@@ -1,4 +1,4 @@
-import type { Hero } from "../types/draft";
+import type { Hero } from "../constants/draft";
 
 const BASE = import.meta.env.BASE_URL;
 // Last update: 2026-03-01 (March 1, 2026)
