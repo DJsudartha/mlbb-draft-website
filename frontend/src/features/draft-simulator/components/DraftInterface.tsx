@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { HeroGrid } from "./HeroGrid";
 import type { Hero } from "../types/draft.ts";
 import { draftOrder } from "../data/draftOrder";
@@ -34,23 +34,16 @@ export function DraftInterface() {
   const currentTeam = currentStep ? currentStep.team : null;
   const currentAction = currentStep ? currentStep.action : "complete";
 
-  const getRandomAvailableHero = () => {
+  const getRandomAvailableHero = useCallback(() => {
   const availableHeroes = heroes.filter(
-    (hero) =>
-      !bannedHeroIds.has(hero.id) &&
-      !pickedHeroIds.has(hero.id)
+    (hero) => !bannedHeroIds.has(hero.id) && !pickedHeroIds.has(hero.id)
   );
-
   if (availableHeroes.length === 0) return null;
+  return availableHeroes[Math.floor(Math.random() * availableHeroes.length)];
+}, [bannedHeroIds, pickedHeroIds]);
 
-  const randomIndex = Math.floor(
-    Math.random() * availableHeroes.length
-  );
 
-  return availableHeroes[randomIndex];
-};
-
-const applyHeroSelection = (hero: Hero, currentIndex: number) => {
+const applyHeroSelection = useCallback((hero: Hero, currentIndex: number) => {
   const current = draftOrder[currentIndex];
   if (!current) return;
 
@@ -92,7 +85,7 @@ const applyHeroSelection = (hero: Hero, currentIndex: number) => {
   } else {
     setStepSelectionsCount(nextSelectionsMade);
   }
-};
+}, [blueBans.length, redBans.length, bluePicks.length, redPicks.length, stepSelectionsCount]);
 
   const handleHeroSelect = (hero: Hero) => {
     if (!hasDraftStarted) return;
@@ -136,18 +129,22 @@ useEffect(() => {
   if (timeRemaining !== 0) return;
   if (currentDraftIndex >= draftOrder.length) return;
 
-  const randomHero = getRandomAvailableHero();
+  const id = setTimeout(() => {
+    const randomHero = getRandomAvailableHero();
 
-  if (randomHero) {
-    handleHeroSelect(randomHero);
-  } else {
-    setCurrentDraftIndex((i) =>
-      i + 1 >= draftOrder.length ? draftOrder.length : i + 1
-    );
-    setStepSelectionsCount(0);
-    setTimeRemaining(TIME_PER_ACTION);
-  }
-}, [timeRemaining, currentDraftIndex, bannedHeroIds, pickedHeroIds, stepSelectionsCount]);
+    if (randomHero) {
+      applyHeroSelection(randomHero, currentDraftIndex);
+    } else {
+      setCurrentDraftIndex((i) =>
+        i + 1 >= draftOrder.length ? draftOrder.length : i + 1
+      );
+      setStepSelectionsCount(0);
+      setTimeRemaining(TIME_PER_ACTION);
+    }
+  }, 0);
+
+  return () => clearTimeout(id);
+}, [timeRemaining, currentDraftIndex, getRandomAvailableHero, applyHeroSelection]);
 
 
 
