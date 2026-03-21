@@ -1,4 +1,4 @@
-import type { DraftPhase } from "../constants/draft";
+import type { DraftPhase } from "../types/draft";
 
 export const draftOrder: {
     phase: DraftPhase;
