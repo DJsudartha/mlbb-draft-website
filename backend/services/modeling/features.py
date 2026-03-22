@@ -591,3 +591,105 @@ def build_ban_candidate_feature_row(
     )
 
     return features
+
+
+def build_pick_candidate_feature_row(
+    candidate_hero: str,
+    acting_team: str,
+    pick_order: int,
+    phase_index: int,
+    our_picks: list[str],
+    enemy_picks: list[str],
+    blue_bans: list[str],
+    red_bans: list[str],
+    hero_table: dict[str, Any],
+    complete_stats: dict[str, Any],
+) -> dict[str, float]:
+    candidate = _hero_features_or_default(candidate_hero, hero_table)
+    all_bans = list(dict.fromkeys([*blue_bans, *red_bans]))
+    our_missing_roles = infer_missing_roles(our_picks, hero_table) if our_picks else []
+    enemy_missing_roles = infer_missing_roles(enemy_picks, hero_table) if enemy_picks else []
+
+    features = {
+        "team_is_blue": 1.0 if acting_team == "blue" else 0.0,
+        "team_is_red": 1.0 if acting_team == "red" else 0.0,
+        "pick_order": float(pick_order),
+        "phase_index": float(phase_index),
+        "our_picks_count": float(len(our_picks)),
+        "enemy_picks_count": float(len(enemy_picks)),
+        "blue_bans_count": float(len(blue_bans)),
+        "red_bans_count": float(len(red_bans)),
+        "all_bans_count": float(len(all_bans)),
+        "our_missing_role_count": float(len(our_missing_roles)),
+        "enemy_missing_role_count": float(len(enemy_missing_roles)),
+        "candidate_pick_rate": candidate["pick_rate"],
+        "candidate_ban_rate": candidate["ban_rate"],
+        "candidate_raw_win_rate": candidate["raw_win_rate"],
+        "candidate_adjusted_win_rate": candidate["adjusted_win_rate"],
+        "candidate_hero_power": candidate["hero_power"],
+        "candidate_hero_flexibility": candidate["hero_flexibility"],
+        "candidate_flexibility_roles": float(candidate["flexibility_roles"]),
+        "candidate_ban_priority": candidate["ban_priority"],
+        "candidate_first_phase_ban_share": candidate["first_phase_ban_share"],
+        "candidate_second_phase_ban_share": candidate["second_phase_ban_share"],
+        "candidate_average_ban_order": candidate["average_ban_order"],
+        "candidate_ban_slot_mode": candidate["ban_slot_mode"],
+        "candidate_ban_slot_entropy": candidate["ban_slot_entropy"],
+        "our_picks_role_entropy": role_entropy_for_heroes(our_picks, hero_table),
+        "enemy_picks_role_entropy": role_entropy_for_heroes(enemy_picks, hero_table),
+        "all_bans_role_entropy": role_entropy_for_heroes(all_bans, hero_table),
+    }
+
+    features.update(summarize_hero_list(our_picks, hero_table, "our_picks"))
+    features.update(summarize_hero_list(enemy_picks, hero_table, "enemy_picks"))
+    features.update(summarize_hero_list(blue_bans, hero_table, "blue_bans"))
+    features.update(summarize_hero_list(red_bans, hero_table, "red_bans"))
+    features.update(summarize_hero_list(all_bans, hero_table, "all_bans"))
+    features.update(
+        summarize_candidate_synergy(
+            candidate_hero,
+            our_picks,
+            complete_stats,
+            "ally_pick_synergy",
+        )
+    )
+    features.update(
+        summarize_candidate_counter(
+            candidate_hero,
+            enemy_picks,
+            complete_stats,
+            "counter_vs_enemy_picks",
+        )
+    )
+    features.update(
+        summarize_candidate_role_completion(
+            candidate_hero,
+            our_missing_roles,
+            hero_table,
+            "ally_role",
+        )
+    )
+    features.update(
+        summarize_candidate_role_completion(
+            candidate_hero,
+            enemy_missing_roles,
+            hero_table,
+            "enemy_role",
+        )
+    )
+    features.update(build_candidate_gap_features(candidate_hero, our_picks, hero_table, "our_picks"))
+    features.update(build_candidate_gap_features(candidate_hero, enemy_picks, hero_table, "enemy_picks"))
+    features.update(
+        build_candidate_similarity_features(candidate_hero, our_picks, hero_table, "our_picks")
+    )
+    features.update(
+        build_candidate_similarity_features(candidate_hero, enemy_picks, hero_table, "enemy_picks")
+    )
+    features.update(
+        build_candidate_role_overlap_features(candidate_hero, our_picks, hero_table, "our_picks")
+    )
+    features.update(
+        build_candidate_role_overlap_features(candidate_hero, enemy_picks, hero_table, "enemy_picks")
+    )
+
+    return features

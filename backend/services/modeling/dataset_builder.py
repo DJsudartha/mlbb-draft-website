@@ -9,7 +9,9 @@ from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
     build_ban_candidate_feature_row,
     build_hero_feature_table,
+    build_pick_candidate_feature_row,
 )
+from backend.services.modeling.pick_signal_model import build_pick_signal_row
 
 RAW_TOURNAMENTS_DIR = Path("backend/data/raw/tournaments")
 
@@ -127,6 +129,89 @@ def build_ban_dataset(
             "note": (
                 "Ban dataset is order-sensitive on real ban slots and prior bans. "
                 "It does not include pick-context features because pick order is unavailable."
+            ),
+        },
+        "rows": rows,
+    }
+
+
+def build_pick_fit_dataset(
+    processed_stats_path: Path = PROCESSED_STATS_PATH,
+    raw_dir: Path = RAW_TOURNAMENTS_DIR,
+    signals_only: bool = False,
+) -> dict[str, Any]:
+    hero_table = build_hero_feature_table(processed_stats_path)
+    processed_stats = load_json(processed_stats_path)
+    if not isinstance(processed_stats, dict):
+        raise ValueError(f"Expected processed hero stats dict at {processed_stats_path}")
+
+    all_heroes = sorted(hero_table["heroes"].keys())
+    rows: list[dict[str, Any]] = []
+
+    for game_row in _iter_games(raw_dir):
+        blue_bans = list(dict.fromkeys(game_row["blue_bans"]))
+        red_bans = list(dict.fromkeys(game_row["red_bans"]))
+
+        for acting_team, team_picks, enemy_picks in (
+            ("blue", game_row["blue_picks"], game_row["red_picks"]),
+            ("red", game_row["red_picks"], game_row["blue_picks"]),
+        ):
+            unique_team_picks = list(dict.fromkeys(team_picks))
+            unique_enemy_picks = list(dict.fromkeys(enemy_picks))
+
+            for slot_index, actual_pick in enumerate(unique_team_picks, start=1):
+                our_picks = [hero_name for hero_name in unique_team_picks if hero_name != actual_pick]
+                unavailable = set(our_picks) | set(unique_enemy_picks) | set(blue_bans) | set(red_bans)
+                query_id = f"{_game_identifier(game_row)}::{acting_team}::pick_fit::{slot_index}::{actual_pick}"
+
+                for candidate_hero in all_heroes:
+                    if candidate_hero in unavailable and candidate_hero != actual_pick:
+                        continue
+
+                    feature_row = build_pick_candidate_feature_row(
+                        candidate_hero=candidate_hero,
+                        acting_team=acting_team,
+                        pick_order=len(our_picks) + 1,
+                        phase_index=2,
+                        our_picks=our_picks,
+                        enemy_picks=unique_enemy_picks,
+                        blue_bans=blue_bans,
+                        red_bans=red_bans,
+                        hero_table=hero_table,
+                        complete_stats=processed_stats,
+                    )
+                    row_features = build_pick_signal_row(feature_row) if signals_only else feature_row
+                    rows.append(
+                        {
+                            "query_id": query_id,
+                            "game_id": _game_identifier(game_row),
+                            "date": game_row["date"],
+                            "patch": game_row["patch"],
+                            "tournament": game_row["tournament"],
+                            "source_file": game_row["source_file"],
+                            "team": acting_team,
+                            "slot_index": slot_index,
+                            "actual_pick": actual_pick,
+                            "candidate_hero": candidate_hero,
+                            "label_is_pick_fit": 1 if candidate_hero == actual_pick else 0,
+                            **row_features,
+                        }
+                    )
+
+    return {
+        "metadata": {
+            "row_count": len(rows),
+            "model_target": "label_is_pick_fit",
+            "source_processed_stats": str(processed_stats_path),
+            "source_raw_dir": str(raw_dir),
+            "note": (
+                "Pick-fit dataset is order-agnostic. Each query removes one actual picked hero from the final team "
+                "and asks which legal hero best completes the remaining four-hero allied core into the full enemy draft. "
+                + (
+                    "Only compact pick signals are stored."
+                    if signals_only
+                    else "Full pick candidate features are stored."
+                )
             ),
         },
         "rows": rows,

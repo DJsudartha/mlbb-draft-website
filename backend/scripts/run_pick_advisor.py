@@ -11,12 +11,12 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 from backend.services.common.parser import parse_csv
-from backend.services.modeling.advisor_pipeline import advise_bans
+from backend.services.modeling.advisor_pipeline import advise_picks
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Run the local ban recommendation + advisor pipeline without touching the app/frontend layer."
+        description="Run the local pick recommendation + advisor pipeline without touching the app/frontend layer."
     )
     parser.add_argument("--team", default="blue", choices=["blue", "red"])
     parser.add_argument("--blue-picks", default="")
@@ -44,7 +44,7 @@ def main() -> None:
 
     os.environ["LOCAL_DRAFT_ADVISOR_BACKEND"] = args.advisor_backend
 
-    payload = advise_bans(
+    payload = advise_picks(
         team=args.team,
         blue_picks=parse_csv(args.blue_picks),
         red_picks=parse_csv(args.red_picks),
