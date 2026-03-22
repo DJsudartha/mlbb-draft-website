@@ -1,4 +1,3 @@
-// Role type (strongly typed instead of string)
 export type Role =
   | "Tank"
   | "Fighter"
@@ -8,24 +7,19 @@ export type Role =
   | "Support"
   | "Other";
 
-// Hero model
+export type DraftPhase = "ban1" | "pick1" | "ban2" | "pick2";
+
+export type DraftAction = "ban" | "pick";
+
+export type Team = "blue" | "red";
+
 export interface Hero {
   id: number;
   name: string;
-  role: Role[];     // supports multiple roles
+  role: Role[];     
   image: string;
 }
 
-// Draft phase name
-export type DraftPhase = "ban1" | "pick1";
-
-// Draft action
-export type DraftAction = "ban" | "pick";
-
-// Team type
-export type Team = "blue" | "red";
-
-// One step in the draft order
 export interface DraftStep {
   phase: DraftPhase;
   team: Team;
