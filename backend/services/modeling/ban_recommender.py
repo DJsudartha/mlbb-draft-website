@@ -15,7 +15,7 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
 from backend.services.common.file_utils import load_json
-from backend.services.modeling.dataset_builder import BAN_SEQUENCE
+from backend.services.modeling.ban_constants import BAN_SEQUENCE
 from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
     build_ban_candidate_feature_row,

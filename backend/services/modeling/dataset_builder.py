@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any, Iterator
 
 from backend.services.common.file_utils import load_json
+from backend.services.modeling.ban_constants import BAN_SEQUENCE
 from backend.services.modeling.features import (
     PROCESSED_STATS_PATH,
     build_ban_candidate_feature_row,
@@ -11,18 +12,6 @@ from backend.services.modeling.features import (
 )
 
 RAW_TOURNAMENTS_DIR = Path("backend/data/raw/tournaments")
-BAN_SEQUENCE = [
-    ("blue", 1, 1),
-    ("red", 1, 2),
-    ("blue", 2, 3),
-    ("red", 2, 4),
-    ("blue", 3, 5),
-    ("red", 3, 6),
-    ("red", 4, 13),
-    ("blue", 4, 14),
-    ("red", 5, 15),
-    ("blue", 5, 16),
-]
 
 
 def _extract_hero_names(items: list[dict[str, Any]]) -> list[str]:
@@ -69,6 +58,8 @@ def _game_identifier(game_row: dict[str, Any]) -> str:
         f"{game_row['source_file']}::series{game_row['series_index']}::"
         f"game{game_row['game_index']}::{game_row['game_no']}"
     )
+
+
 def build_ban_dataset(
     processed_stats_path: Path = PROCESSED_STATS_PATH,
     raw_dir: Path = RAW_TOURNAMENTS_DIR,

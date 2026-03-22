@@ -4,7 +4,7 @@ import os
 from functools import lru_cache
 from pathlib import Path
 import sys
-from typing import Any
+from typing import Protocol, TypedDict, cast
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -23,6 +23,58 @@ except ImportError:
 DEFAULT_LOCAL_BACKEND = "auto"
 DEFAULT_LOCAL_EMBEDDINGS_MODEL = "all-MiniLM-L6-v2"
 DEFAULT_TOP_PRINCIPLES = 3
+
+
+class ScoreComponents(TypedDict):
+    prior_score: float
+    context_peak: float
+    context_support: float
+    current_slot_share: float
+    phase_fit_share: float
+    ban_rate: float
+    hero_power: float
+    enemy_pick_synergy_max: float
+    counter_vs_our_picks_max: float
+    enemy_role_completion_max: float
+
+
+class RecommendationItem(TypedDict):
+    hero: str
+    rank: int
+    score: float
+    score_components: ScoreComponents
+    reasons: list[str]
+
+
+class BanRecommendation(TypedDict, total=False):
+    team: str
+    ban_order: int
+    phase_index: int
+    recommendations: list[RecommendationItem]
+
+
+class RetrievedPrinciple(TypedDict):
+    id: str
+    title: str
+    text: str
+    score: float
+
+
+class BanAdvice(TypedDict):
+    uses_llm: bool
+    provider: str
+    model: str | None
+    advice: str
+    retrieved_principles: list[RetrievedPrinciple]
+    error: str | None
+
+
+class EmbeddingEncoder(Protocol):
+    def encode(self, sentences: list[str], convert_to_tensor: bool = False) -> object: ...
+
+
+class QueryVectorizer(Protocol):
+    def transform(self, raw_documents: list[str]) -> object: ...
 
 
 def _local_backend_preference() -> str:
@@ -49,7 +101,7 @@ def _principle_documents() -> list[str]:
 
 
 @lru_cache(maxsize=1)
-def _semantic_backend() -> tuple[str, Any, Any]:
+def _semantic_backend() -> tuple[str, EmbeddingEncoder | QueryVectorizer, object]:
     preference = _local_backend_preference()
 
     if preference in {"auto", "sentence-transformers"} and SentenceTransformer is not None:
@@ -57,7 +109,7 @@ def _semantic_backend() -> tuple[str, Any, Any]:
             model_name = _local_embeddings_model()
             model = SentenceTransformer(model_name)
             principle_embeddings = model.encode(_principle_documents(), convert_to_tensor=False)
-            return ("sentence-transformers", model, principle_embeddings)
+            return ("sentence-transformers", cast(EmbeddingEncoder, model), principle_embeddings)
         except Exception:
             if preference == "sentence-transformers":
                 raise
@@ -68,7 +120,7 @@ def _semantic_backend() -> tuple[str, Any, Any]:
 
 
 def _query_text(
-    recommendation: dict[str, Any],
+    recommendation: BanRecommendation,
     blue_picks: list[str],
     red_picks: list[str],
     blue_bans: list[str],
@@ -76,18 +128,18 @@ def _query_text(
 ) -> str:
     recommendation_lines: list[str] = []
     for item in recommendation.get("recommendations", [])[:3]:
-        components = item.get("score_components", {})
+        components = item["score_components"]
         recommendation_lines.append(
             (
-                f"hero={item.get('hero')} rank={item.get('rank')} "
-                f"reasons={' | '.join(item.get('reasons', []))} "
-                f"phase_fit={components.get('phase_fit_share', 0.0):.4f} "
-                f"slot_fit={components.get('current_slot_share', 0.0):.4f} "
-                f"ban_rate={components.get('ban_rate', 0.0):.4f} "
-                f"hero_power={components.get('hero_power', 0.0):.4f} "
-                f"enemy_synergy={components.get('enemy_pick_synergy_max', 0.0):.4f} "
-                f"counter_threat={components.get('counter_vs_our_picks_max', 0.0):.4f} "
-                f"enemy_role_completion={components.get('enemy_role_completion_max', 0.0):.4f}"
+                f"hero={item['hero']} rank={item['rank']} "
+                f"reasons={' | '.join(item['reasons'])} "
+                f"phase_fit={components['phase_fit_share']:.4f} "
+                f"slot_fit={components['current_slot_share']:.4f} "
+                f"ban_rate={components['ban_rate']:.4f} "
+                f"hero_power={components['hero_power']:.4f} "
+                f"enemy_synergy={components['enemy_pick_synergy_max']:.4f} "
+                f"counter_threat={components['counter_vs_our_picks_max']:.4f} "
+                f"enemy_role_completion={components['enemy_role_completion_max']:.4f}"
             )
         )
 
@@ -106,20 +158,23 @@ def _query_text(
 
 
 def _retrieve_principles(
-    recommendation: dict[str, Any],
+    recommendation: BanRecommendation,
     blue_picks: list[str],
     red_picks: list[str],
     blue_bans: list[str],
     red_bans: list[str],
-) -> tuple[str, list[dict[str, Any]]]:
+) -> tuple[str, list[RetrievedPrinciple]]:
     backend_name, model_or_vectorizer, document_matrix = _semantic_backend()
     query = _query_text(recommendation, blue_picks, red_picks, blue_bans, red_bans)
 
     if backend_name == "sentence-transformers":
-        query_vector = model_or_vectorizer.encode([query], convert_to_tensor=False)
+        query_vector = cast(EmbeddingEncoder, model_or_vectorizer).encode(
+            [query],
+            convert_to_tensor=False,
+        )
         similarity_scores = cosine_similarity(query_vector, document_matrix)[0]
     else:
-        query_vector = model_or_vectorizer.transform([query])
+        query_vector = cast(QueryVectorizer, model_or_vectorizer).transform([query])
         similarity_scores = cosine_similarity(query_vector, document_matrix)[0]
 
     ranked_indices = sorted(
@@ -128,7 +183,7 @@ def _retrieve_principles(
         reverse=True,
     )[: _local_top_principles()]
 
-    principles: list[dict[str, Any]] = []
+    principles: list[RetrievedPrinciple] = []
     for index in ranked_indices:
         principles.append(
             {
@@ -156,16 +211,16 @@ def _compact_reason(reason: str) -> str:
     return replacements.get(reason, reason)
 
 
-def _compact_reason_summary(item: dict[str, Any]) -> str:
-    reasons = item.get("reasons", [])
+def _compact_reason_summary(item: RecommendationItem) -> str:
+    reasons = item["reasons"]
     if not reasons:
         return "best overall score"
-    return "; ".join(_compact_reason(str(reason)) for reason in reasons[:2])
+    return "; ".join(_compact_reason(reason) for reason in reasons[:2])
 
 
 def _fallback_advice_text(
-    recommendation: dict[str, Any],
-    retrieved_principles: list[dict[str, Any]],
+    recommendation: BanRecommendation,
+    retrieved_principles: list[RetrievedPrinciple],
 ) -> str:
     picks = recommendation.get("recommendations", [])
     if not picks:
@@ -186,12 +241,12 @@ def _fallback_advice_text(
 
 
 def build_ban_advice(
-    recommendation: dict[str, Any],
+    recommendation: BanRecommendation,
     blue_picks: list[str] | None = None,
     red_picks: list[str] | None = None,
     blue_bans: list[str] | None = None,
     red_bans: list[str] | None = None,
-) -> dict[str, Any]:
+) -> BanAdvice:
     blue_picks = blue_picks or []
     red_picks = red_picks or []
     blue_bans = blue_bans or []

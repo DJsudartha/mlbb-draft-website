@@ -9,11 +9,8 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 if str(ROOT_DIR) not in sys.path:
     sys.path.append(str(ROOT_DIR))
 
+from backend.services.common.parser import parse_csv
 from backend.services.modeling.advisor_pipeline import advise_bans
-
-
-def parse_csv(value: str) -> list[str]:
-    return [item.strip() for item in value.split(",") if item.strip()]
 
 
 def main() -> None:
