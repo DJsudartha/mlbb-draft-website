@@ -1,14 +1,10 @@
 import React from "react";
-
-export type RecommendationItem = {
-  hero: string;
-  score?: number;
-  reasons?: string[];
-};
+import type { Recommendation } from "../types/draft"
+import { getHeroImage } from "../../../shared/utils/HeroImage";
 
 type RecommendationBoxProps = {
   team: "blue" | "red";
-  recommendations: RecommendationItem[];
+  recommendations: Recommendation[];
   visible: boolean;
 };
 
@@ -26,31 +22,33 @@ const RecommendationBox: React.FC<RecommendationBoxProps> = ({
       </div>
 
       {recommendations.length === 0 ? (
-        <div className="recommendation-box__empty">
-          No recommendations yet
-        </div>
+        <div className="text-sm text-gray-300">No recommendations yet</div>
       ) : (
-        <div className="recommendation-box__list">
-          {recommendations.map((rec, index) => (
-            <div key={rec.hero} className="recommendation-box__item">
-              <div className="recommendation-box__rank">#{index + 1}</div>
-
-              <div className="recommendation-box__content">
-                <div className="recommendation-box__hero">
-                  {rec.hero}
+        <div className="flex-1 overflow-y-auto flex flex-col gap-2 pr-1">
+          {recommendations.map((rec) => (
+            <div
+              key={rec.hero}
+              className="rounded-lg bg-white/5 px-3 py-2 flex items-start justify-between gap-3"
+            >
+              <div className="min-w-0">
+                <div className="font-medium text-sm">
+                  #{rec.rank} {rec.hero}
+                  <img
+                    src={getHeroImage(rec.hero)}
+                    alt={rec.hero}
+                    className="w-10 h-10 rounded-full object-cover border border-white/10"
+                  />
                 </div>
 
-                {typeof rec.score === "number" && (
-                  <div className="recommendation-box__score">
-                    {rec.score.toFixed(3)}
-                  </div>
-                )}
-
-                {rec.reasons?.[0] && (
-                  <div className="recommendation-box__reason">
+                {rec.reasons[0] && (
+                  <div className="text-xs text-gray-400 mt-1 line-clamp-2">
                     {rec.reasons[0]}
                   </div>
                 )}
+              </div>
+
+              <div className="shrink-0 text-xs text-gray-300">
+                {rec.score.toFixed(2)}
               </div>
             </div>
           ))}

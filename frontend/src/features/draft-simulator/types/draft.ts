@@ -41,6 +41,7 @@ export interface Recommendation {
   hero: string;
   score: number;
   reasons: string[];
+  rank: string;
 }
 
 export interface RecommendationResponse {

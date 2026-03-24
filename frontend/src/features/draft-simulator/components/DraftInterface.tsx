@@ -21,8 +21,6 @@ export function DraftInterface() {
   const [stepSelectionsCount, setStepSelectionsCount] = useState(0);
   const [hasDraftStarted, setHasDraftStarted] = useState(false);
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
-  const [loadingRecommendations, setLoadingRecommendations] = useState(false);
-  const [recommendationError, setRecommendationError] = useState<string | null>(null);
   
 
   const [bannedHeroIds, setBannedHeroIds] = useState<
@@ -194,13 +192,14 @@ useEffect(() => {
         body: JSON.stringify(payload),
       });
 
-      console.log("Response status:", res.status);
 
       const data = await res.json();
-      console.log("Recommendation response:", data);
 
       if (!cancelled) {
-        setRecommendations(data.recommendations ?? []);
+        const recs = Array.isArray(data.recommendation.recommendations) 
+                    ? data.recommendation.recommendations 
+                    : [];
+        setRecommendations(recs);
       }
     } catch (err) {
       console.error("Recommendation error:", err);
@@ -217,9 +216,13 @@ useEffect(() => {
   };
 }, [bluePicks, redPicks, blueBans, redBans, currentStep, hasDraftStarted]);
 
+useEffect(() => {
+  console.log("recommendations updated:", recommendations);
+}, [recommendations]);
+
   return (
     <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col overflow-hidden">
-      <div className="container mx-auto px-4 pt-3">
+      <div className="w-full max-w-[1900px] mx-auto px-6 pt-3">
         <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-xl px-4 py-2 flex items-center justify-between">
           <div className="w-[360px] flex justify-start">
             <BanSlotsRow
@@ -254,10 +257,9 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className="flex-1 container mx-auto px-4 py-4 grid grid-cols-[180px_minmax(0,1fr)_180px] gap-4 min-h-0">
-  {/* LEFT SIDE */}
-  <div className="min-h-0 flex flex-col gap-4">
-    <div className="flex-1 min-h-0">
+  <div className="flex-1 w-full max-w-[1900px] mx-auto px-6 py-4 grid grid-cols-[140px_minmax(180px,220px)_minmax(0,1fr)_minmax(180px,220px)_140px] gap-4 min-h-0 overflow-hidden">
+    {/* BLUE PICKS */}
+    <div className="min-h-0">
       <PickSlotsColumn
         heroes={bluePicks}
         currentAction={currentAction}
@@ -266,29 +268,37 @@ useEffect(() => {
       />
     </div>
 
-    <div className="shrink-0">
+    {/* BLUE RECOMMENDATIONS */}
+    <div className="min-h-0">
       <RecommendationBox
         team="blue"
         recommendations={recommendations}
         visible={hasDraftStarted && currentTeam === "blue"}
       />
     </div>
-  </div>
 
-  {/* CENTER */}
-  <div className="min-w-0 min-h-0 overflow-y-auto custom-scrollbar">
-    <HeroGrid
-      heroes={heroes}
-      onHeroSelect={handleHeroSelect}
-      bannedHeroIds={bannedHeroIds}
-      pickedHeroIds={pickedHeroIds}
-      currentAction={currentAction}
-    />
-  </div>
+    {/* CENTER */}
+    <div className="min-w-0 min-h-0 overflow-y-auto custom-scrollbar">
+      <HeroGrid
+        heroes={heroes}
+        onHeroSelect={handleHeroSelect}
+        bannedHeroIds={bannedHeroIds}
+        pickedHeroIds={pickedHeroIds}
+        currentAction={currentAction}
+      />
+    </div>
 
-  {/* RIGHT SIDE */}
-  <div className="min-h-0 flex flex-col gap-4">
-    <div className="flex-1 min-h-0">
+    {/* RED RECOMMENDATIONS */}
+    <div className="min-h-0">
+      <RecommendationBox
+        team="red"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "red"}
+      />
+    </div>
+
+    {/* RED PICKS */}
+    <div className="min-h-0">
       <PickSlotsColumn
         heroes={redPicks}
         currentAction={currentAction}
@@ -296,16 +306,7 @@ useEffect(() => {
         side="red"
       />
     </div>
-
-    <div className="shrink-0">
-      <RecommendationBox
-        team="red"
-        recommendations={recommendations}
-        visible={hasDraftStarted && currentTeam === "red"}
-      />
-    </div>
   </div>
-</div>
 </div>
   );
 }

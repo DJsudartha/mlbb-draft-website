@@ -1968,37 +1968,5 @@
         "win_rate": 1.0
       }
     }
-  },
-  "default": {
-    "picked": 4,
-    "banned": 8,
-    "wins": 2,
-    "win_rate": 0.5,
-    "ban_orders": {
-      "4": 4,
-      "5": 4
-    },
-    "roles": {
-      "Mid": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      },
-      "Roam": {
-        "picked": 1,
-        "wins": 0,
-        "win_rate": 0.0
-      },
-      "Jungle": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      },
-      "Gold": {
-        "picked": 1,
-        "wins": 1,
-        "win_rate": 1.0
-      }
-    }
   }
 }

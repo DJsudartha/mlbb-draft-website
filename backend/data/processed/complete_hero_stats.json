@@ -1772,11 +1772,6 @@
           "wins": 1,
           "win_rate": 1.0
         },
-        "default": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
         "Atlas": {
           "games": 1,
           "wins": 0,
@@ -2092,11 +2087,6 @@
         "Lukas": {
           "games": 1,
           "wins": 1,
-          "win_rate": 1.0
-        },
-        "default": {
-          "games": 2,
-          "wins": 2,
           "win_rate": 1.0
         },
         "Helcurt": {
@@ -8172,11 +8162,6 @@
           "wins": 2,
           "win_rate": 0.5
         },
-        "default": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
         "Helcurt": {
           "games": 1,
           "wins": 1,
@@ -8502,11 +8487,6 @@
         "Obsidia": {
           "games": 1,
           "wins": 1,
-          "win_rate": 1.0
-        },
-        "default": {
-          "games": 2,
-          "wins": 2,
           "win_rate": 1.0
         },
         "Atlas": {
@@ -10697,11 +10677,6 @@
           "wins": 2,
           "win_rate": 0.6667
         },
-        "default": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
         "Cyclops": {
           "games": 1,
           "wins": 0,
@@ -11017,11 +10992,6 @@
         "Helcurt": {
           "games": 1,
           "wins": 1,
-          "win_rate": 1.0
-        },
-        "default": {
-          "games": 2,
-          "wins": 2,
           "win_rate": 1.0
         },
         "Ruby": {
@@ -22269,11 +22239,6 @@
           "wins": 0,
           "win_rate": 0.0
         },
-        "default": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
         "Helcurt": {
           "games": 1,
           "wins": 1,
@@ -22580,11 +22545,6 @@
           "games": 7,
           "wins": 6,
           "win_rate": 0.8571
-        },
-        "default": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
         },
         "Suyou": {
           "games": 5,
@@ -26718,11 +26678,6 @@
           "wins": 0,
           "win_rate": 0.0
         },
-        "default": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
         "Khaleed": {
           "games": 4,
           "wins": 3,
@@ -26982,11 +26937,6 @@
         },
         "Fanny": {
           "games": 1,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "default": {
-          "games": 2,
           "wins": 0,
           "win_rate": 0.0
         },
@@ -28314,11 +28264,6 @@
           "wins": 3,
           "win_rate": 1.0
         },
-        "default": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
         "Helcurt": {
           "games": 4,
           "wins": 2,
@@ -28643,11 +28588,6 @@
         },
         "Zetian": {
           "games": 4,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "default": {
-          "games": 2,
           "wins": 0,
           "win_rate": 0.0
         },
@@ -31111,114 +31051,6 @@
         "Grock": {
           "games": 1,
           "wins": 1,
-          "win_rate": 1.0
-        }
-      }
-    },
-    "default": {
-      "stats": {
-        "picked": 4,
-        "banned": 8,
-        "wins": 2,
-        "win_rate": 0.5,
-        "ban_orders": {
-          "4": 4,
-          "5": 4
-        },
-        "roles": {
-          "Mid": {
-            "picked": 1,
-            "wins": 0,
-            "win_rate": 0.0
-          },
-          "Roam": {
-            "picked": 1,
-            "wins": 0,
-            "win_rate": 0.0
-          },
-          "Jungle": {
-            "picked": 1,
-            "wins": 1,
-            "win_rate": 1.0
-          },
-          "Gold": {
-            "picked": 1,
-            "wins": 1,
-            "win_rate": 1.0
-          }
-        }
-      },
-      "counter_matrix": {
-        "Cici": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "default": {
-          "games": 8,
-          "wins": 4,
-          "win_rate": 0.5
-        },
-        "Kimmy": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "Kalea": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "Arlott": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
-        "Baxia": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
-        "Granger": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        }
-      },
-      "synergy_matrix": {
-        "Arlott": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "Baxia": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "Granger": {
-          "games": 2,
-          "wins": 0,
-          "win_rate": 0.0
-        },
-        "default": {
-          "games": 4,
-          "wins": 2,
-          "win_rate": 0.5
-        },
-        "Cici": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
-        "Kimmy": {
-          "games": 2,
-          "wins": 2,
-          "win_rate": 1.0
-        },
-        "Kalea": {
-          "games": 2,
-          "wins": 2,
           "win_rate": 1.0
         }
       }

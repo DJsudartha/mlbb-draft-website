@@ -23,9 +23,9 @@ async function postDraftState(
 }
 
 export function fetchBanRecommendations(payload: RecommendationRequest) {
-  return postDraftState("/recommend-bans", payload);
+  return postDraftState("/draft/recommend-bans", payload);
 }
 
 export function fetchPickRecommendations(payload: RecommendationRequest) {
-  return postDraftState("/recommend-picks", payload);
+  return postDraftState("/draft/recommend-picks", payload);
 }
