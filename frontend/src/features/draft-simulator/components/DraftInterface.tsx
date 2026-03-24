@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { HeroGrid } from "./HeroGrid";
-import type { Hero } from "../types/draft.ts";
+import type { Hero, Recommendation } from "../types/draft.ts";
 import { draftOrder } from "../data/draftOrder";
 import { heroes } from "../data/heroes";
 import { TIME_PER_ACTION, SLOT_COUNT } from "../constants/draft.ts";
@@ -9,6 +9,7 @@ import { DraftHeader } from "./DraftHeader.tsx";
 import { DraftControls } from "./DraftControls.tsx";
 import RecommendationBox  from "./RecommendationBox.tsx"
 import { PickSlotsColumn } from "./PickSlotsColumn.tsx";
+import { fetchBanRecommendations, fetchPickRecommendations } from "../api.ts"
 
 export function DraftInterface() {
   const [timeRemaining, setTimeRemaining] = useState(TIME_PER_ACTION);
@@ -19,7 +20,9 @@ export function DraftInterface() {
   const [redPicks, setRedPicks] = useState<Hero[]>([]);
   const [stepSelectionsCount, setStepSelectionsCount] = useState(0);
   const [hasDraftStarted, setHasDraftStarted] = useState(false);
-  const [recommendations, setRecommendations] = useState([]);
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  const [loadingRecommendations, setLoadingRecommendations] = useState(false);
+  const [recommendationError, setRecommendationError] = useState<string | null>(null);
   
 
   const [bannedHeroIds, setBannedHeroIds] = useState<
@@ -117,6 +120,12 @@ const handleResetDraft = () => {
   setHasDraftStarted(false);
 }
 
+  const blueBanActiveIndex =
+    currentAction === "ban" && currentTeam === "blue" ? blueBans.length : -1;
+
+  const redBanActiveIndex =
+    currentAction === "ban" && currentTeam === "red" ? redBans.length : -1;
+
 useEffect(() => {
   if(!hasDraftStarted) return;
   if (currentDraftIndex >= draftOrder.length) return;
@@ -149,13 +158,64 @@ useEffect(() => {
   return () => clearTimeout(id);
 }, [timeRemaining, currentDraftIndex, getRandomAvailableHero, applyHeroSelection]);
 
+useEffect(() => {
+  if (!hasDraftStarted) return;
+  if (!currentStep) return;
 
+  const payload = {
+    team: currentStep.team,
+    blue_picks: bluePicks.map((h) => h.name),
+    red_picks: redPicks.map((h) => h.name),
+    blue_bans: blueBans.map((h) => h.name),
+    red_bans: redBans.map((h) => h.name),
+    top_k: 3,
+    strict_turn: true,
+    rerank_pool_size: null,
+  };
 
-  const blueBanActiveIndex =
-    currentAction === "ban" && currentTeam === "blue" ? blueBans.length : -1;
+  console.log("Sending recommendation payload:", payload);
 
-  const redBanActiveIndex =
-    currentAction === "ban" && currentTeam === "red" ? redBans.length : -1;
+  let cancelled = false;
+
+  async function fetchData() {
+    try {
+      const endpoint =
+        currentStep.action === "ban"
+          ? "/advise-bans"
+          : "/advise-picks";
+
+      console.log("Posting to endpoint:", endpoint);
+
+      const res = await fetch(`http://127.0.0.1:8000/draft${endpoint}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      console.log("Response status:", res.status);
+
+      const data = await res.json();
+      console.log("Recommendation response:", data);
+
+      if (!cancelled) {
+        setRecommendations(data.recommendations ?? []);
+      }
+    } catch (err) {
+      console.error("Recommendation error:", err);
+      if (!cancelled) {
+        setRecommendations([]);
+      }
+    }
+  }
+
+  fetchData();
+
+  return () => {
+    cancelled = true;
+  };
+}, [bluePicks, redPicks, blueBans, redBans, currentStep, hasDraftStarted]);
 
   return (
     <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col overflow-hidden">

@@ -34,11 +34,11 @@ export interface RecommendationRequest {
   red_bans: string[];
   top_k?: number;
   strict_turn?: boolean;
+  rerank_pool_size?: number | null;
 }
 
 export interface Recommendation {
   hero: string;
-  rank: number;
   score: number;
   reasons: string[];
 }
