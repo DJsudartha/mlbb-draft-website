@@ -4655,11 +4655,6 @@
       "wins": 0,
       "win_rate": 0.0
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Helcurt": {
       "games": 1,
       "wins": 1,
@@ -6302,11 +6297,6 @@
       "wins": 1,
       "win_rate": 1.0
     },
-    "default": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
     "Atlas": {
       "games": 1,
       "wins": 0,
@@ -7882,11 +7872,6 @@
       "wins": 2,
       "win_rate": 0.5
     },
-    "default": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
     "Helcurt": {
       "games": 1,
       "wins": 1,
@@ -8958,11 +8943,6 @@
       "wins": 3,
       "win_rate": 1.0
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Helcurt": {
       "games": 4,
       "wins": 2,
@@ -9304,11 +9284,6 @@
       "games": 3,
       "wins": 2,
       "win_rate": 0.6667
-    },
-    "default": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
     },
     "Cyclops": {
       "games": 1,
@@ -14058,11 +14033,6 @@
       "wins": 0,
       "win_rate": 0.0
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Khaleed": {
       "games": 4,
       "wins": 3,
@@ -18601,43 +18571,6 @@
     "Hilda": {
       "games": 1,
       "wins": 1,
-      "win_rate": 1.0
-    }
-  },
-  "default": {
-    "Cici": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "default": {
-      "games": 8,
-      "wins": 4,
-      "win_rate": 0.5
-    },
-    "Kimmy": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "Kalea": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "Arlott": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
-    "Baxia": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
-    "Granger": {
-      "games": 2,
-      "wins": 2,
       "win_rate": 1.0
     }
   },

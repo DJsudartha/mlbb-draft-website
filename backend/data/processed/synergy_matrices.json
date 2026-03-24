@@ -4045,11 +4045,6 @@
       "wins": 6,
       "win_rate": 0.8571
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Suyou": {
       "games": 5,
       "wins": 3,
@@ -5462,11 +5457,6 @@
       "wins": 1,
       "win_rate": 1.0
     },
-    "default": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
     "Helcurt": {
       "games": 1,
       "wins": 0,
@@ -6832,11 +6822,6 @@
       "wins": 1,
       "win_rate": 1.0
     },
-    "default": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
     "Atlas": {
       "games": 2,
       "wins": 2,
@@ -7763,11 +7748,6 @@
       "wins": 0,
       "win_rate": 0.0
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Thamuz": {
       "games": 1,
       "wins": 1,
@@ -8073,11 +8053,6 @@
     "Helcurt": {
       "games": 1,
       "wins": 1,
-      "win_rate": 1.0
-    },
-    "default": {
-      "games": 2,
-      "wins": 2,
       "win_rate": 1.0
     },
     "Ruby": {
@@ -12008,11 +11983,6 @@
       "wins": 0,
       "win_rate": 0.0
     },
-    "default": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
     "Phoveus": {
       "games": 1,
       "wins": 0,
@@ -15702,85 +15672,6 @@
       "games": 1,
       "wins": 1,
       "win_rate": 1.0
-    }
-  },
-  "default": {
-    "Arlott": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "Baxia": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "Granger": {
-      "games": 2,
-      "wins": 0,
-      "win_rate": 0.0
-    },
-    "default": {
-      "games": 4,
-      "wins": 2,
-      "win_rate": 0.5
-    },
-    "Cici": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
-    "Kimmy": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
-    "Kalea": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    }
-  },
-  "Atlas": {
-    "Lapu-Lapu": {
-      "games": 2,
-      "wins": 1,
-      "win_rate": 0.5
-    },
-    "Lancelot": {
-      "games": 1,
-      "wins": 1,
-      "win_rate": 1.0
-    },
-    "Kimmy": {
-      "games": 2,
-      "wins": 2,
-      "win_rate": 1.0
-    },
-    "X.Borg": {
-      "games": 1,
-      "wins": 1,
-      "win_rate": 1.0
-    },
-    "Alice": {
-      "games": 1,
-      "wins": 1,
-      "win_rate": 1.0
-    },
-    "Leomord": {
-      "games": 2,
-      "wins": 1,
-      "win_rate": 0.5
-    },
-    "Karrie": {
-      "games": 2,
-      "wins": 1,
-      "win_rate": 0.5
-    },
-    "Valentina": {
-      "games": 1,
-      "wins": 0,
-      "win_rate": 0.0
     }
   },
   "Cyclops": {

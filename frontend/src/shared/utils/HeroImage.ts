@@ -1,2 +1,2 @@
 export const getHeroImage = (name: string) =>
-  `./public/HeroIcon/${name}.png`;
+  `${import.meta.env.BASE_URL}/public/HeroIcon/${name}.png`;
