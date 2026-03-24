@@ -150,203 +150,221 @@
     "team_is_red",
     "turn_index"
   ],
+  "tuned_ranker_params": {
+    "n_estimators": 220,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "subsample": 0.85,
+    "colsample_bytree": 0.8
+  },
+  "validation_metrics": {
+    "top1_hit_rate": 0.16049382716049382,
+    "top3_hit_rate": 0.3765432098765432,
+    "top5_hit_rate": 0.47530864197530864,
+    "mean_reciprocal_rank": 0.3230699745564232,
+    "mean_rank": 7.901234567901234,
+    "median_rank": 6.0,
+    "ndcg_at_3": 0.2838744772707265,
+    "ndcg_at_5": 0.32424629777976033,
+    "query_count": 162.0
+  },
   "top_global_ranker_features": [
     {
       "feature": "candidate_phase_fit_share",
-      "importance": 0.0576288066804409
-    },
-    {
-      "feature": "candidate_ban_rate",
-      "importance": 0.033096734434366226
+      "importance": 0.052229125052690506
     },
     {
       "feature": "candidate_hero_power",
-      "importance": 0.02957974374294281
+      "importance": 0.04597080498933792
+    },
+    {
+      "feature": "candidate_ban_rate",
+      "importance": 0.028633147478103638
     },
     {
       "feature": "candidate_current_slot_share",
-      "importance": 0.022755078971385956
+      "importance": 0.02193113975226879
     },
     {
-      "feature": "prior_blue_bans_ban_slot_mode_min",
-      "importance": 0.010994816198945045
+      "feature": "candidate_first_phase_ban_share",
+      "importance": 0.02138379029929638
     },
     {
-      "feature": "candidate_similarity_to_ally_prior_bans_mean",
-      "importance": 0.01092787366360426
-    },
-    {
-      "feature": "candidate_similarity_to_enemy_prior_bans_max",
-      "importance": 0.01058898400515318
+      "feature": "candidate_ban_slot_2_share",
+      "importance": 0.02012939192354679
     },
     {
       "feature": "candidate_similarity_to_ally_prior_bans_max",
-      "importance": 0.010513225570321083
+      "importance": 0.014425554312765598
     },
     {
-      "feature": "team_is_red",
-      "importance": 0.010454504750669003
+      "feature": "candidate_similarity_to_ally_prior_bans_mean",
+      "importance": 0.014285683631896973
     },
     {
-      "feature": "prior_red_bans_hero_flexibility_max",
-      "importance": 0.009799689054489136
+      "feature": "prior_red_bans_ban_slot_1_share_min",
+      "importance": 0.013104075565934181
     },
     {
-      "feature": "prior_blue_bans_ban_slot_2_share_sum",
-      "importance": 0.009434636682271957
+      "feature": "prior_red_bans_ban_slot_1_share_max",
+      "importance": 0.012433968484401703
     },
     {
       "feature": "enemy_prior_bans_role_entropy",
-      "importance": 0.009350169450044632
+      "importance": 0.012316330336034298
+    },
+    {
+      "feature": "candidate_minus_enemy_prior_bans_hero_power_mean",
+      "importance": 0.012107309885323048
+    },
+    {
+      "feature": "candidate_role_overlap_to_enemy_prior_bans_max",
+      "importance": 0.0118367038667202
+    },
+    {
+      "feature": "prior_red_bans_ban_slot_2_share_min",
+      "importance": 0.011777231469750404
+    },
+    {
+      "feature": "prior_red_bans_ban_slot_4_share_max",
+      "importance": 0.01153543870896101
     },
     {
       "feature": "prior_blue_bans_adjusted_win_rate_min",
-      "importance": 0.00914820283651352
+      "importance": 0.011167262680828571
     },
     {
-      "feature": "prior_blue_bans_adjusted_win_rate_mean",
-      "importance": 0.009114016778767109
-    },
-    {
-      "feature": "prior_red_bans_ban_slot_mode_min",
-      "importance": 0.00898363720625639
-    },
-    {
-      "feature": "prior_red_bans_ban_slot_entropy_min",
-      "importance": 0.008870135061442852
-    },
-    {
-      "feature": "candidate_ban_slot_1_share",
-      "importance": 0.008856402710080147
-    },
-    {
-      "feature": "prior_red_bans_average_ban_order_min",
-      "importance": 0.00881408154964447
+      "feature": "candidate_role_overlap_to_ally_prior_bans_max",
+      "importance": 0.011151069775223732
     },
     {
       "feature": "candidate_role_overlap_to_ally_prior_bans_mean",
-      "importance": 0.00881195068359375
+      "importance": 0.010836881585419178
     },
     {
-      "feature": "prior_red_bans_ban_slot_4_share_sum",
-      "importance": 0.008785507641732693
+      "feature": "prior_blue_bans_ban_slot_2_share_sum",
+      "importance": 0.010547305457293987
+    },
+    {
+      "feature": "prior_red_bans_ban_slot_entropy_mean",
+      "importance": 0.010413805022835732
     }
   ],
   "models": {
     "xgb_ranker_global": {
       "ranking": {
-        "top1_hit_rate": 0.1485148514851485,
-        "top3_hit_rate": 0.3415841584158416,
-        "top5_hit_rate": 0.4158415841584158,
-        "mean_reciprocal_rank": 0.28998185240171537,
-        "mean_rank": 11.792079207920793,
-        "median_rank": 8.5,
-        "ndcg_at_3": 0.25995734817892835,
-        "ndcg_at_5": 0.28976878809334605,
+        "top1_hit_rate": 0.20297029702970298,
+        "top3_hit_rate": 0.3217821782178218,
+        "top5_hit_rate": 0.400990099009901,
+        "mean_reciprocal_rank": 0.3243553323496153,
+        "mean_rank": 10.564356435643564,
+        "median_rank": 7.0,
+        "ndcg_at_3": 0.27274691117397687,
+        "ndcg_at_5": 0.3059921088265456,
         "query_count": 202.0
       },
       "by_ban_order": {
         "1": {
           "top1_hit_rate": 0.4,
-          "top3_hit_rate": 0.5,
-          "top5_hit_rate": 0.575,
-          "mean_reciprocal_rank": 0.49112856346552,
-          "mean_rank": 8.15,
-          "median_rank": 3.5,
-          "ndcg_at_3": 0.45654648767857287,
-          "ndcg_at_5": 0.4866560419921348,
+          "top3_hit_rate": 0.45,
+          "top5_hit_rate": 0.55,
+          "mean_reciprocal_rank": 0.48698752228164005,
+          "mean_rank": 7.575,
+          "median_rank": 4.0,
+          "ndcg_at_3": 0.4315464876785729,
+          "ndcg_at_5": 0.47461414348591224,
           "query_count": 40.0
         },
         "2": {
-          "top1_hit_rate": 0.0,
-          "top3_hit_rate": 0.35,
-          "top5_hit_rate": 0.425,
-          "mean_reciprocal_rank": 0.2221047435219093,
-          "mean_rank": 10.15,
-          "median_rank": 7.0,
-          "ndcg_at_3": 0.2077324383928644,
-          "ndcg_at_5": 0.2378419927064263,
+          "top1_hit_rate": 0.225,
+          "top3_hit_rate": 0.325,
+          "top5_hit_rate": 0.4,
+          "mean_reciprocal_rank": 0.3451433525624702,
+          "mean_rank": 8.95,
+          "median_rank": 6.0,
+          "ndcg_at_3": 0.28481973151785933,
+          "ndcg_at_5": 0.31712047337336385,
           "query_count": 40.0
         },
         "3": {
           "top1_hit_rate": 0.225,
-          "top3_hit_rate": 0.45,
-          "top5_hit_rate": 0.55,
-          "mean_reciprocal_rank": 0.38023331054910003,
-          "mean_rank": 6.6,
+          "top3_hit_rate": 0.4,
+          "top5_hit_rate": 0.525,
+          "mean_reciprocal_rank": 0.3812698412698412,
+          "mean_rank": 6.2,
           "median_rank": 5.0,
-          "ndcg_at_3": 0.3505929753571458,
-          "ndcg_at_5": 0.39037384985157125,
+          "ndcg_at_3": 0.32559297535714576,
+          "ndcg_at_5": 0.3761407638034061,
           "query_count": 40.0
         },
         "4": {
-          "top1_hit_rate": 0.12195121951219512,
-          "top3_hit_rate": 0.2682926829268293,
-          "top5_hit_rate": 0.3170731707317073,
-          "mean_reciprocal_rank": 0.24115523904971134,
-          "mean_rank": 16.878048780487806,
-          "median_rank": 18.0,
-          "ndcg_at_3": 0.21108899433798264,
-          "ndcg_at_5": 0.23209760692692866,
+          "top1_hit_rate": 0.17073170731707318,
+          "top3_hit_rate": 0.2926829268292683,
+          "top5_hit_rate": 0.34146341463414637,
+          "mean_reciprocal_rank": 0.2814715225445878,
+          "mean_rank": 13.975609756097562,
+          "median_rank": 12.0,
+          "ndcg_at_3": 0.241287542944253,
+          "ndcg_at_5": 0.2612272835615197,
           "query_count": 41.0
         },
         "5": {
           "top1_hit_rate": 0.0,
           "top3_hit_rate": 0.14634146341463414,
-          "top5_hit_rate": 0.21951219512195122,
-          "mean_reciprocal_rank": 0.12073913860114836,
-          "mean_rank": 16.926829268292682,
+          "top5_hit_rate": 0.1951219512195122,
+          "mean_reciprocal_rank": 0.13276624550575716,
+          "mean_rank": 15.902439024390244,
           "median_rank": 13.0,
-          "ndcg_at_3": 0.07955754895470525,
-          "ndcg_at_5": 0.10786385192308635,
+          "ndcg_at_3": 0.08594436620209342,
+          "ndcg_at_5": 0.10695297879103943,
           "query_count": 41.0
         }
       },
       "by_phase": {
         "1": {
-          "top1_hit_rate": 0.20833333333333334,
-          "top3_hit_rate": 0.43333333333333335,
-          "top5_hit_rate": 0.5166666666666667,
-          "mean_reciprocal_rank": 0.3644888725121768,
-          "mean_rank": 8.3,
-          "median_rank": 5.0,
-          "ndcg_at_3": 0.3382906338095277,
-          "ndcg_at_5": 0.3716239615167108,
+          "top1_hit_rate": 0.2833333333333333,
+          "top3_hit_rate": 0.39166666666666666,
+          "top5_hit_rate": 0.49166666666666664,
+          "mean_reciprocal_rank": 0.4044669053713176,
+          "mean_rank": 7.575,
+          "median_rank": 6.0,
+          "ndcg_at_3": 0.34731973151785933,
+          "ndcg_at_5": 0.3892917935542274,
           "query_count": 120.0
         },
         "2": {
-          "top1_hit_rate": 0.06097560975609756,
-          "top3_hit_rate": 0.2073170731707317,
+          "top1_hit_rate": 0.08536585365853659,
+          "top3_hit_rate": 0.21951219512195122,
           "top5_hit_rate": 0.2682926829268293,
-          "mean_reciprocal_rank": 0.18094718882542996,
-          "mean_rank": 16.902439024390244,
-          "median_rank": 13.0,
-          "ndcg_at_3": 0.14532327164634395,
-          "ndcg_at_5": 0.1699807294250075,
+          "mean_reciprocal_rank": 0.20711888402517248,
+          "mean_rank": 14.939024390243903,
+          "median_rank": 12.5,
+          "ndcg_at_3": 0.1636159545731732,
+          "ndcg_at_5": 0.18409013117627956,
           "query_count": 82.0
         }
       },
       "by_team": {
         "blue": {
-          "top1_hit_rate": 0.17,
-          "top3_hit_rate": 0.35,
-          "top5_hit_rate": 0.39,
-          "mean_reciprocal_rank": 0.2993823664497771,
-          "mean_rank": 13.03,
+          "top1_hit_rate": 0.26,
+          "top3_hit_rate": 0.32,
+          "top5_hit_rate": 0.36,
+          "mean_reciprocal_rank": 0.34797392129422816,
+          "mean_rank": 11.69,
           "median_rank": 9.0,
-          "ndcg_at_3": 0.27440227289286034,
-          "ndcg_at_5": 0.29031462269063046,
+          "ndcg_at_3": 0.2965464876785729,
+          "ndcg_at_5": 0.3133353124931201,
           "query_count": 100.0
         },
         "red": {
-          "top1_hit_rate": 0.12745098039215685,
-          "top3_hit_rate": 0.3333333333333333,
+          "top1_hit_rate": 0.14705882352941177,
+          "top3_hit_rate": 0.3235294117647059,
           "top5_hit_rate": 0.4411764705882353,
-          "mean_reciprocal_rank": 0.2807656621585168,
-          "mean_rank": 10.57843137254902,
-          "median_rank": 8.0,
-          "ndcg_at_3": 0.2457956572829166,
-          "ndcg_at_5": 0.28923365613522406,
+          "mean_reciprocal_rank": 0.3011998529921511,
+          "mean_rank": 9.46078431372549,
+          "median_rank": 6.0,
+          "ndcg_at_3": 0.24941399303221604,
+          "ndcg_at_5": 0.2987928895455902,
           "query_count": 102.0
         }
       }
@@ -707,118 +725,118 @@
     },
     "heuristic_hero_power": {
       "ranking": {
-        "top1_hit_rate": 0.054455445544554455,
-        "top3_hit_rate": 0.10891089108910891,
-        "top5_hit_rate": 0.28217821782178215,
-        "mean_reciprocal_rank": 0.1668883823560618,
-        "mean_rank": 13.524752475247524,
-        "median_rank": 12.0,
-        "ndcg_at_3": 0.0842758367043853,
-        "ndcg_at_5": 0.155209875161357,
+        "top1_hit_rate": 0.0594059405940594,
+        "top3_hit_rate": 0.18316831683168316,
+        "top5_hit_rate": 0.30198019801980197,
+        "mean_reciprocal_rank": 0.18969490281192855,
+        "mean_rank": 12.024752475247524,
+        "median_rank": 10.0,
+        "ndcg_at_3": 0.12712063258486692,
+        "ndcg_at_5": 0.17438503792477827,
         "query_count": 202.0
       },
       "by_ban_order": {
         "1": {
           "top1_hit_rate": 0.05,
-          "top3_hit_rate": 0.05,
+          "top3_hit_rate": 0.15,
           "top5_hit_rate": 0.225,
-          "mean_reciprocal_rank": 0.14170446467116976,
-          "mean_rank": 13.725,
-          "median_rank": 14.0,
-          "ndcg_at_3": 0.05,
-          "ndcg_at_5": 0.12208161634992991,
+          "mean_reciprocal_rank": 0.17031468123379884,
+          "mean_rank": 10.7,
+          "median_rank": 8.0,
+          "ndcg_at_3": 0.1,
+          "ndcg_at_5": 0.12901396054259062,
           "query_count": 40.0
         },
         "2": {
           "top1_hit_rate": 0.075,
-          "top3_hit_rate": 0.125,
-          "top5_hit_rate": 0.375,
-          "mean_reciprocal_rank": 0.20104887072760494,
-          "mean_rank": 11.025,
-          "median_rank": 10.5,
-          "ndcg_at_3": 0.1,
-          "ndcg_at_5": 0.20657354574737696,
+          "top3_hit_rate": 0.3,
+          "top5_hit_rate": 0.4,
+          "mean_reciprocal_rank": 0.22918515782379106,
+          "mean_rank": 10.2,
+          "median_rank": 8.0,
+          "ndcg_at_3": 0.19404648767857288,
+          "ndcg_at_5": 0.23492295594396967,
           "query_count": 40.0
         },
         "3": {
-          "top1_hit_rate": 0.125,
-          "top3_hit_rate": 0.275,
-          "top5_hit_rate": 0.375,
-          "mean_reciprocal_rank": 0.2598073678772208,
-          "mean_rank": 10.375,
-          "median_rank": 7.5,
-          "ndcg_at_3": 0.2065464876785729,
-          "ndcg_at_5": 0.24742295594396965,
+          "top1_hit_rate": 0.15,
+          "top3_hit_rate": 0.325,
+          "top5_hit_rate": 0.5,
+          "mean_reciprocal_rank": 0.30558018482413646,
+          "mean_rank": 8.4,
+          "median_rank": 6.0,
+          "ndcg_at_3": 0.25059297535714575,
+          "ndcg_at_5": 0.32157899793610445,
           "query_count": 40.0
         },
         "4": {
           "top1_hit_rate": 0.0,
-          "top3_hit_rate": 0.0,
-          "top5_hit_rate": 0.2926829268292683,
-          "mean_reciprocal_rank": 0.10568339314484808,
-          "mean_rank": 16.414634146341463,
-          "median_rank": 15.0,
-          "ndcg_at_3": 0.0,
-          "ndcg_at_5": 0.11643182778856227,
+          "top3_hit_rate": 0.04878048780487805,
+          "top5_hit_rate": 0.21951219512195122,
+          "mean_reciprocal_rank": 0.11185769374026616,
+          "mean_rank": 15.585365853658537,
+          "median_rank": 14.0,
+          "ndcg_at_3": 0.02758365252613311,
+          "ndcg_at_5": 0.09470056475736831,
           "query_count": 41.0
         },
         "5": {
           "top1_hit_rate": 0.024390243902439025,
           "top3_hit_rate": 0.0975609756097561,
-          "top5_hit_rate": 0.14634146341463414,
-          "mean_reciprocal_rank": 0.12868307282794803,
-          "mean_rank": 15.951219512195122,
+          "top5_hit_rate": 0.17073170731707318,
+          "mean_reciprocal_rank": 0.1348537553509649,
+          "mean_rank": 15.073170731707316,
           "median_rank": 13.0,
-          "ndcg_at_3": 0.06736242700348573,
-          "ndcg_at_5": 0.08623329564907314,
+          "ndcg_at_3": 0.06736242700348574,
+          "ndcg_at_5": 0.09566872997186684,
           "query_count": 41.0
         }
       },
       "by_phase": {
         "1": {
-          "top1_hit_rate": 0.08333333333333333,
-          "top3_hit_rate": 0.15,
-          "top5_hit_rate": 0.325,
-          "mean_reciprocal_rank": 0.20085356775866517,
-          "mean_rank": 11.708333333333334,
-          "median_rank": 11.0,
-          "ndcg_at_3": 0.11884882922619096,
-          "ndcg_at_5": 0.19202603934709223,
+          "top1_hit_rate": 0.09166666666666666,
+          "top3_hit_rate": 0.25833333333333336,
+          "top5_hit_rate": 0.375,
+          "mean_reciprocal_rank": 0.23502667462724197,
+          "mean_rank": 9.766666666666667,
+          "median_rank": 8.0,
+          "ndcg_at_3": 0.1815464876785729,
+          "ndcg_at_5": 0.2285053048075549,
           "query_count": 120.0
         },
         "2": {
           "top1_hit_rate": 0.012195121951219513,
-          "top3_hit_rate": 0.04878048780487805,
-          "top5_hit_rate": 0.21951219512195122,
-          "mean_reciprocal_rank": 0.11718323298639803,
-          "mean_rank": 16.182926829268293,
-          "median_rank": 14.5,
-          "ndcg_at_3": 0.033681213501742864,
-          "ndcg_at_5": 0.10133256171881772,
+          "top3_hit_rate": 0.07317073170731707,
+          "top5_hit_rate": 0.1951219512195122,
+          "mean_reciprocal_rank": 0.12335572454561554,
+          "mean_rank": 15.329268292682928,
+          "median_rank": 13.5,
+          "ndcg_at_3": 0.04747303976480943,
+          "ndcg_at_5": 0.09518464736461757,
           "query_count": 82.0
         }
       },
       "by_team": {
         "blue": {
-          "top1_hit_rate": 0.01,
-          "top3_hit_rate": 0.11,
-          "top5_hit_rate": 0.26,
-          "mean_reciprocal_rank": 0.13971832553115304,
-          "mean_rank": 13.13,
-          "median_rank": 12.0,
-          "ndcg_at_3": 0.06392789260714374,
-          "ndcg_at_5": 0.1254617137594331,
+          "top1_hit_rate": 0.02,
+          "top3_hit_rate": 0.18,
+          "top5_hit_rate": 0.32,
+          "mean_reciprocal_rank": 0.17185812087478516,
+          "mean_rank": 11.77,
+          "median_rank": 9.5,
+          "ndcg_at_3": 0.1117836778214312,
+          "ndcg_at_5": 0.16769602086782107,
           "query_count": 100.0
         },
         "red": {
           "top1_hit_rate": 0.09803921568627451,
-          "top3_hit_rate": 0.10784313725490197,
-          "top5_hit_rate": 0.30392156862745096,
-          "mean_reciprocal_rank": 0.1935256929687172,
-          "mean_rank": 13.911764705882353,
-          "median_rank": 12.0,
-          "ndcg_at_3": 0.10422480150560252,
-          "ndcg_at_5": 0.18437473928089027,
+          "top3_hit_rate": 0.18627450980392157,
+          "top5_hit_rate": 0.28431372549019607,
+          "mean_reciprocal_rank": 0.20718194392677458,
+          "mean_rank": 12.27450980392157,
+          "median_rank": 11.0,
+          "ndcg_at_3": 0.14215686274509803,
+          "ndcg_at_5": 0.1809428977845404,
           "query_count": 102.0
         }
       }
