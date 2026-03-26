@@ -1,0 +1,176 @@
+{
+  "source": "trained-xgbranker-feature-importances",
+  "model": "pick_xgb_ranker_global",
+  "feature_count": 315,
+  "signal_groups": {
+    "secure_power_signal": {
+      "direction": "positive",
+      "total_importance": 0.016767865512520075,
+      "features": [
+        {
+          "feature": "candidate_pick_rate",
+          "importance": 0.0059638130478560925,
+          "weight": 0.35566918421447785
+        },
+        {
+          "feature": "candidate_ban_rate",
+          "importance": 0.0034157847985625267,
+          "weight": 0.20371017384484985
+        },
+        {
+          "feature": "candidate_raw_win_rate",
+          "importance": 0.0031837550923228264,
+          "weight": 0.18987241339367908
+        },
+        {
+          "feature": "candidate_adjusted_win_rate",
+          "importance": 0.004204512573778629,
+          "weight": 0.25074822854699325
+        }
+      ]
+    },
+    "flexibility_signal": {
+      "direction": "positive",
+      "total_importance": 0.0031851278617978096,
+      "features": [
+        {
+          "feature": "candidate_hero_flexibility",
+          "importance": 0.0031851278617978096,
+          "weight": 1.0
+        },
+        {
+          "feature": "candidate_flexibility_roles",
+          "importance": 0.0,
+          "weight": 0.0
+        }
+      ]
+    },
+    "ally_pick_synergy_signal": {
+      "direction": "positive",
+      "total_importance": 0.041067381389439106,
+      "features": [
+        {
+          "feature": "ally_pick_synergy_synergy_games_total",
+          "importance": 0.02021654322743416,
+          "weight": 0.4922773876357514
+        },
+        {
+          "feature": "ally_pick_synergy_synergy_pairs",
+          "importance": 0.0,
+          "weight": 0.0
+        },
+        {
+          "feature": "ally_pick_synergy_synergy_score_max",
+          "importance": 0.004288411699235439,
+          "weight": 0.10442379217142508
+        },
+        {
+          "feature": "ally_pick_synergy_synergy_score_mean",
+          "importance": 0.004103062674403191,
+          "weight": 0.09991050160939492
+        },
+        {
+          "feature": "ally_pick_synergy_synergy_score_min",
+          "importance": 0.00726978899911046,
+          "weight": 0.17702100190347078
+        },
+        {
+          "feature": "ally_pick_synergy_synergy_score_sum",
+          "importance": 0.0051895747892558575,
+          "weight": 0.12636731667995782
+        }
+      ]
+    },
+    "counter_vs_enemy_picks_signal": {
+      "direction": "positive",
+      "total_importance": 0.033611804246902466,
+      "features": [
+        {
+          "feature": "counter_vs_enemy_picks_counter_games_total",
+          "importance": 0.014514215290546417,
+          "weight": 0.4318189878748919
+        },
+        {
+          "feature": "counter_vs_enemy_picks_counter_pairs",
+          "importance": 0.0,
+          "weight": 0.0
+        },
+        {
+          "feature": "counter_vs_enemy_picks_counter_score_max",
+          "importance": 0.004372492432594299,
+          "weight": 0.13008800124132733
+        },
+        {
+          "feature": "counter_vs_enemy_picks_counter_score_mean",
+          "importance": 0.0041104150004684925,
+          "weight": 0.12229081694855141
+        },
+        {
+          "feature": "counter_vs_enemy_picks_counter_score_min",
+          "importance": 0.0047552622854709625,
+          "weight": 0.14147596036619156
+        },
+        {
+          "feature": "counter_vs_enemy_picks_counter_score_sum",
+          "importance": 0.005859419237822294,
+          "weight": 0.17432623356903776
+        }
+      ]
+    },
+    "ally_role_completion_signal": {
+      "direction": "positive",
+      "total_importance": 0.25750137493014336,
+      "features": [
+        {
+          "feature": "ally_role_missing_role_count",
+          "importance": 0.0,
+          "weight": 0.0
+        },
+        {
+          "feature": "ally_role_role_completion_max",
+          "importance": 0.18119528889656067,
+          "weight": 0.7036672675853343
+        },
+        {
+          "feature": "ally_role_role_completion_mean",
+          "importance": 0.06636448949575424,
+          "weight": 0.25772479666859266
+        },
+        {
+          "feature": "ally_role_role_completion_min",
+          "importance": 0.009941596537828445,
+          "weight": 0.03860793574607307
+        },
+        {
+          "feature": "ally_role_role_completion_sum",
+          "importance": 0.0,
+          "weight": 0.0
+        }
+      ]
+    },
+    "redundancy_penalty": {
+      "direction": "penalty",
+      "total_importance": 0.019967362750321627,
+      "features": [
+        {
+          "feature": "candidate_role_overlap_to_our_picks_mean",
+          "importance": 0.01292821578681469,
+          "weight": 0.6474673670465794
+        },
+        {
+          "feature": "candidate_role_overlap_to_our_picks_max",
+          "importance": 0.007039146963506937,
+          "weight": 0.35253263295342063
+        }
+      ]
+    }
+  },
+  "positive_signal_weights": {
+    "secure_power_signal": 0.04761791463740749,
+    "flexibility_signal": 0.009045226807137105,
+    "ally_pick_synergy_signal": 0.11662444811022736,
+    "counter_vs_enemy_picks_signal": 0.09545186441549092,
+    "ally_role_completion_signal": 0.7312605460297371
+  },
+  "redundancy_penalty_weight": 0.05670394805284117
+}

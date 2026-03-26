@@ -129,7 +129,7 @@
     "startdate": "2025-12-20 08:00:00",
     "enddate": "2025-12-23 14:00:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Playoffs]]",
-    "active": true
+    "active": false
   },
   {
     "name": "games_of_the_future_2025",
@@ -140,7 +140,7 @@
     "startdate": "2025-12-18 10:00:00",
     "enddate": "2025-12-19 15:45:00",
     "conditions": "[[pagename::Games_of_the_Future/2025/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -151,7 +151,7 @@
     "startdate": "2025-12-17 08:00:00",
     "enddate": "2025-12-17 08:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Knockout_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -162,7 +162,7 @@
     "startdate": "2025-12-17 03:30:00",
     "enddate": "2025-12-17 03:30:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Knockout_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_women_s_tournament",
@@ -173,7 +173,7 @@
     "startdate": "2025-12-14 03:30:00",
     "enddate": "2025-12-14 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Women/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "33rd_sea_games_men_s_tournament",
@@ -184,7 +184,7 @@
     "startdate": "2025-12-13 03:30:00",
     "enddate": "2025-12-13 12:00:00",
     "conditions": "[[pagename::Southeast_Asian_Games/2025/Men/Group_Stage]]",
-    "active": true
+    "active": false
   },
   {
     "name": "m7_world_championship_japan_qualifier",

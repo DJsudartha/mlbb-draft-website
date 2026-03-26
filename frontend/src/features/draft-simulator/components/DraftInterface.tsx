@@ -9,7 +9,6 @@ import { DraftHeader } from "./DraftHeader.tsx";
 import { DraftControls } from "./DraftControls.tsx";
 import RecommendationBox  from "./RecommendationBox.tsx"
 import { PickSlotsColumn } from "./PickSlotsColumn.tsx";
-import { fetchBanRecommendations, fetchPickRecommendations } from "../api.ts"
 
 export function DraftInterface() {
   const [timeRemaining, setTimeRemaining] = useState(TIME_PER_ACTION);

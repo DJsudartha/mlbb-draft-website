@@ -1,0 +1,29 @@
+{
+  "source": "trained-ranker-importances",
+  "model_sources": [
+    {
+      "source": "pick_xgb_ranker_global",
+      "total_importance": 0.013584110420197248,
+      "feature_importances": {
+        "pick_rate": 0.0059638130478560925,
+        "ban_rate": 0.0034157847985625267,
+        "adjusted_win_rate": 0.004204512573778629
+      }
+    },
+    {
+      "source": "ban_xgb_ranker_global",
+      "total_importance": 0.1300011407583952,
+      "feature_importances": {
+        "pick_rate": 0.07167600840330124,
+        "ban_rate": 0.05311116948723793,
+        "adjusted_win_rate": 0.005213962867856026
+      }
+    }
+  ],
+  "feature_weights": {
+    "pick_rate": 0.540722816681139,
+    "ban_rate": 0.39368217711644904,
+    "adjusted_win_rate": 0.06559500620241199
+  },
+  "total_importance": 0.14358525117859244
+}

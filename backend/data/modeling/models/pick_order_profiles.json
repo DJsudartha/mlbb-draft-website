@@ -1,0 +1,89 @@
+{
+  "source": "trained-logregcv-slot-blend",
+  "blend_features": [
+    "prior_score",
+    "secure_power_signal",
+    "flexibility_signal",
+    "ally_pick_synergy_signal",
+    "counter_vs_enemy_picks_signal",
+    "ally_role_completion_signal",
+    "redundancy_penalty"
+  ],
+  "slot_profiles": {
+    "1": {
+      "slot_index": 1,
+      "id": "opener",
+      "title": "Opener",
+      "summary": "Learned blend emphasizing base ranker score, role completion, enemy counterplay for pick slot 1.",
+      "intercept": 2.1358583779120512,
+      "base_score_weight": 2.7993991115855494,
+      "secure_power_weight": 0.4504935809790806,
+      "flexibility_weight": -0.29703046699541297,
+      "synergy_weight": -0.6083351904768264,
+      "counter_weight": 0.8337560872227417,
+      "role_completion_weight": -1.7405022529262564,
+      "redundancy_penalty_weight": 0.5564279761119154,
+      "regularization_c": 0.1
+    },
+    "2": {
+      "slot_index": 2,
+      "id": "bridge",
+      "title": "Bridge",
+      "summary": "Learned blend emphasizing base ranker score, role completion, ally synergy for pick slot 2.",
+      "intercept": 4.269839243895022,
+      "base_score_weight": 3.0028208659077986,
+      "secure_power_weight": -0.36818491962750755,
+      "flexibility_weight": -0.8120217886030145,
+      "synergy_weight": -0.9661450028606088,
+      "counter_weight": -0.3164872029639967,
+      "role_completion_weight": -2.6062666502526284,
+      "redundancy_penalty_weight": 0.8646576811498364,
+      "regularization_c": 10.0
+    },
+    "3": {
+      "slot_index": 3,
+      "id": "bridge",
+      "title": "Bridge",
+      "summary": "Learned blend emphasizing base ranker score, enemy counterplay, secure power for pick slot 3.",
+      "intercept": 1.1718995486928057,
+      "base_score_weight": 2.3607041537365676,
+      "secure_power_weight": -0.7754474170621957,
+      "flexibility_weight": 0.22122555739872707,
+      "synergy_weight": 0.5936969474508453,
+      "counter_weight": -0.9700115565226124,
+      "role_completion_weight": 0.38838367113632793,
+      "redundancy_penalty_weight": 0.17982686933700373,
+      "regularization_c": 0.1
+    },
+    "4": {
+      "slot_index": 4,
+      "id": "setup",
+      "title": "Second-Phase Setup",
+      "summary": "Learned blend emphasizing base ranker score, role completion, redundancy control for pick slot 4.",
+      "intercept": 1.9049055659508447,
+      "base_score_weight": 2.5929495611702085,
+      "secure_power_weight": -0.19545941336091874,
+      "flexibility_weight": 0.05085219194993844,
+      "synergy_weight": -0.3675603842279561,
+      "counter_weight": -0.1258528105725574,
+      "role_completion_weight": -0.800425685256718,
+      "redundancy_penalty_weight": 0.3922541792033168,
+      "regularization_c": 0.1
+    },
+    "5": {
+      "slot_index": 5,
+      "id": "closer",
+      "title": "Closer",
+      "summary": "Learned blend emphasizing base ranker score, redundancy control, secure power for pick slot 5.",
+      "intercept": 1.5517583070778076,
+      "base_score_weight": 2.888321524986764,
+      "secure_power_weight": -1.5735556866491727,
+      "flexibility_weight": 0.05964192459742703,
+      "synergy_weight": 0.06141652903418734,
+      "counter_weight": -0.5394907458339159,
+      "role_completion_weight": -0.020953651297851098,
+      "redundancy_penalty_weight": 1.7793054156646906,
+      "regularization_c": 1.0
+    }
+  }
+}
