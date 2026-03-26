@@ -134,4 +134,5 @@ export const heroes: Hero[] = [
   { id: 129, name: "Zetian", role: ["Mage"], image: `${BASE}HeroIcon/Zetian.png` },
   { id: 130, name: "Obsidia", role: ["Marksman"], image: `${BASE}HeroIcon/Obsidia.png` },
   { id: 131, name: "Sora", role: ["Fighter", "Assassin"], image: `${BASE}HeroIcon/Sora.png` },
+  { id: 132, name: "Marcel", role: ["Support"], image: `${BASE}HeroIcon/Marcel.png`}
 ];

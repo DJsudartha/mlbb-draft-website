@@ -1,50 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { HeroGrid } from "./HeroGrid";
-import type { Hero, DraftPhase } from "../types/draft.ts";
+import type { Hero, Recommendation } from "../types/draft.ts";
+import { draftOrder } from "../data/draftOrder";
 import { heroes } from "../data/heroes";
-import { X, ChevronRight, ChevronLeft } from "lucide-react";
-
-const draftOrder: {
-    phase: DraftPhase;
-    team: "blue" | "red";
-    action: "ban" | "pick";
-  }[] = [
-    // First ban phase (5 bans each)
-    { phase: "ban1", team: "blue", action: "ban" },
-    { phase: "ban1", team: "red", action: "ban" },
-    { phase: "ban1", team: "blue", action: "ban" },
-    { phase: "ban1", team: "red", action: "ban" },
-    { phase: "ban1", team: "blue", action: "ban" },
-    { phase: "ban1", team: "red", action: "ban" },
-
-    // First pick phase
-    { phase: "pick1", team: "blue", action: "pick" },
-    { phase: "pick1", team: "red", action: "pick" },
-    { phase: "pick1", team: "red", action: "pick" },
-    { phase: "pick1", team: "blue", action: "pick" },
-    { phase: "pick1", team: "blue", action: "pick" },
-    { phase: "pick1", team: "red", action: "pick" },
-
-    // Second ban phase
-    { phase: "ban1", team: "red", action: "ban" },
-    { phase: "ban1", team: "blue", action: "ban" },
-    { phase: "ban1", team: "red", action: "ban" },
-    { phase: "ban1", team: "blue", action: "ban" },
-
-    // Final pick phase
-    { phase: "pick1", team: "red", action: "pick" },
-    { phase: "pick1", team: "blue", action: "pick" },
-    { phase: "pick1", team: "blue", action: "pick" },
-    { phase: "pick1", team: "red", action: "pick" },
-  ];
+import { TIME_PER_ACTION, SLOT_COUNT } from "../constants/draft.ts";
+import { BanSlotsRow } from "./BanSlotsRow.tsx";
+import { DraftHeader } from "./DraftHeader.tsx";
+import { DraftControls } from "./DraftControls.tsx";
+import RecommendationBox  from "./RecommendationBox.tsx"
+import { PickSlotsColumn } from "./PickSlotsColumn.tsx";
+import { fetchBanRecommendations, fetchPickRecommendations } from "../api.ts"
 
 export function DraftInterface() {
-  const [timeRemaining, setTimeRemaining] = useState(30);
+  const [timeRemaining, setTimeRemaining] = useState(TIME_PER_ACTION);
 
   const [blueBans, setBlueBans] = useState<Hero[]>([]);
   const [redBans, setRedBans] = useState<Hero[]>([]);
   const [bluePicks, setBluePicks] = useState<Hero[]>([]);
   const [redPicks, setRedPicks] = useState<Hero[]>([]);
+  const [stepSelectionsCount, setStepSelectionsCount] = useState(0);
+  const [hasDraftStarted, setHasDraftStarted] = useState(false);
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  
 
   const [bannedHeroIds, setBannedHeroIds] = useState<
     Set<number>
@@ -61,309 +38,275 @@ export function DraftInterface() {
   const currentTeam = currentStep ? currentStep.team : null;
   const currentAction = currentStep ? currentStep.action : "complete";
 
-  useEffect(() => {
-    if (currentDraftIndex >= draftOrder.length) return;
+  const getRandomAvailableHero = useCallback(() => {
+  const availableHeroes = heroes.filter(
+    (hero) => !bannedHeroIds.has(hero.id) && !pickedHeroIds.has(hero.id)
+  );
+  if (availableHeroes.length === 0) return null;
+  return availableHeroes[Math.floor(Math.random() * availableHeroes.length)];
+}, [bannedHeroIds, pickedHeroIds]);
 
-    const timer = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev <= 1) {
-          setCurrentDraftIndex((i) => i + 1);
-          return 30;
-        }
-        return prev - 1;
-      });
-    }, 1000);
 
-    return () => clearInterval(timer);
-  }, [currentDraftIndex]);
+const applyHeroSelection = useCallback((hero: Hero, currentIndex: number) => {
+  const current = draftOrder[currentIndex];
+  if (!current) return;
+
+  let selectionApplied = false;
+
+  if (current.action === "ban") {
+    if (current.team === "blue" && blueBans.length < SLOT_COUNT) {
+      setBlueBans((prev) => [...prev, hero]);
+      setBannedHeroIds((prev) => new Set([...prev, hero.id]));
+      selectionApplied = true;
+    } else if (current.team === "red" && redBans.length < SLOT_COUNT) {
+      setRedBans((prev) => [...prev, hero]);
+      setBannedHeroIds((prev) => new Set([...prev, hero.id]));
+      selectionApplied = true;
+    }
+  } else if (current.action === "pick") {
+    if (current.team === "blue" && bluePicks.length < SLOT_COUNT) {
+      setBluePicks((prev) => [...prev, hero]);
+      setPickedHeroIds((prev) => new Set([...prev, hero.id]));
+      selectionApplied = true;
+    } else if (current.team === "red" && redPicks.length < SLOT_COUNT) {
+      setRedPicks((prev) => [...prev, hero]);
+      setPickedHeroIds((prev) => new Set([...prev, hero.id]));
+      selectionApplied = true;
+    }
+  }
+
+  if (!selectionApplied) return;
+
+  const nextSelectionsMade = stepSelectionsCount + 1;
+  const isStepComplete = nextSelectionsMade >= current.count;
+
+  if (isStepComplete) {
+    setCurrentDraftIndex((i) =>
+      i + 1 >= draftOrder.length ? draftOrder.length : i + 1
+    );
+    setStepSelectionsCount(0);
+    setTimeRemaining(TIME_PER_ACTION);
+  } else {
+    setStepSelectionsCount(nextSelectionsMade);
+  }
+}, [blueBans.length, redBans.length, bluePicks.length, redPicks.length, stepSelectionsCount]);
 
   const handleHeroSelect = (hero: Hero) => {
+    if (!hasDraftStarted) return;
     if (currentDraftIndex >= draftOrder.length) return;
     if (
       bannedHeroIds.has(hero.id) ||
       pickedHeroIds.has(hero.id)
-    )
+    ) {
       return;
+    }
 
-    const current = draftOrder[currentDraftIndex];
+    applyHeroSelection(hero, currentDraftIndex);
+  };
 
-    if (current.action === "ban") {
-      if (current.team === "blue" && blueBans.length < 5) {
-        setBlueBans([...blueBans, hero]);
-        setBannedHeroIds(new Set([...bannedHeroIds, hero.id]));
-        setCurrentDraftIndex((i) => i + 1);
-      } else if (current.team === "red" && redBans.length < 5) {
-        setRedBans([...redBans, hero]);
-        setBannedHeroIds(new Set([...bannedHeroIds, hero.id]));
-        setCurrentDraftIndex((i) => i + 1);
+const handleResetDraft = () => {
+  setBlueBans([]);
+  setRedBans([]);
+  setBluePicks([]);
+  setRedPicks([]);
+
+  setBannedHeroIds(new Set());
+  setPickedHeroIds(new Set());
+  setCurrentDraftIndex(0);
+  setStepSelectionsCount(0);
+  setTimeRemaining(TIME_PER_ACTION);
+  setHasDraftStarted(false);
+}
+
+  const blueBanActiveIndex =
+    currentAction === "ban" && currentTeam === "blue" ? blueBans.length : -1;
+
+  const redBanActiveIndex =
+    currentAction === "ban" && currentTeam === "red" ? redBans.length : -1;
+
+useEffect(() => {
+  if(!hasDraftStarted) return;
+  if (currentDraftIndex >= draftOrder.length) return;
+
+  const timer = setInterval(() => {
+    setTimeRemaining((prev) => Math.max(prev - 1, 0));
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, [currentDraftIndex, hasDraftStarted]);
+
+useEffect(() => {
+  if (timeRemaining !== 0) return;
+  if (currentDraftIndex >= draftOrder.length) return;
+
+  const id = setTimeout(() => {
+    const randomHero = getRandomAvailableHero();
+
+    if (randomHero) {
+      applyHeroSelection(randomHero, currentDraftIndex);
+    } else {
+      setCurrentDraftIndex((i) =>
+        i + 1 >= draftOrder.length ? draftOrder.length : i + 1
+      );
+      setStepSelectionsCount(0);
+      setTimeRemaining(TIME_PER_ACTION);
+    }
+  }, 0);
+
+  return () => clearTimeout(id);
+}, [timeRemaining, currentDraftIndex, getRandomAvailableHero, applyHeroSelection]);
+
+useEffect(() => {
+  if (!hasDraftStarted) return;
+  if (!currentStep) return;
+
+  const payload = {
+    team: currentStep.team,
+    blue_picks: bluePicks.map((h) => h.name),
+    red_picks: redPicks.map((h) => h.name),
+    blue_bans: blueBans.map((h) => h.name),
+    red_bans: redBans.map((h) => h.name),
+    top_k: 3,
+    strict_turn: true,
+    rerank_pool_size: null,
+  };
+
+  console.log("Sending recommendation payload:", payload);
+
+  let cancelled = false;
+
+  async function fetchData() {
+    try {
+      const endpoint =
+        currentStep.action === "ban"
+          ? "/advise-bans"
+          : "/advise-picks";
+
+      console.log("Posting to endpoint:", endpoint);
+
+      const res = await fetch(`http://127.0.0.1:8000/draft${endpoint}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+
+      const data = await res.json();
+
+      if (!cancelled) {
+        const recs = Array.isArray(data.recommendation.recommendations) 
+                    ? data.recommendation.recommendations 
+                    : [];
+        setRecommendations(recs);
       }
-    } else if (current.action === "pick") {
-      if (current.team === "blue" && bluePicks.length < 5) {
-        setBluePicks([...bluePicks, hero]);
-        setPickedHeroIds(new Set([...pickedHeroIds, hero.id]));
-        setCurrentDraftIndex((i) => i + 1);
-      } else if (
-        current.team === "red" &&
-        redPicks.length < 5
-      ) {
-        setRedPicks([...redPicks, hero]);
-        setPickedHeroIds(new Set([...pickedHeroIds, hero.id]));
-        setCurrentDraftIndex((i) => i + 1);
+    } catch (err) {
+      console.error("Recommendation error:", err);
+      if (!cancelled) {
+        setRecommendations([]);
       }
     }
+  }
+
+  fetchData();
+
+  return () => {
+    cancelled = true;
   };
+}, [bluePicks, redPicks, blueBans, redBans, currentStep, hasDraftStarted]);
 
-  // Center label (Ban / Pick / Complete)
-  const centerLabel =
-    currentAction === "ban"
-      ? "Ban"
-      : currentAction === "pick"
-        ? "Pick"
-        : "Complete";
-
-  // Calculate current slot index for highlighting (global 0..9 for bans: 0..4 blue, 5..9 red)
-  const getCurrentBanIndex = () => {
-    if (
-      currentDraftIndex >= draftOrder.length ||
-      currentAction !== "ban"
-    )
-      return -1;
-    const current = draftOrder[currentDraftIndex];
-    return current.team === "blue"
-      ? blueBans.length
-      : 5 + redBans.length;
-  };
-
-  const currentBanIndex = getCurrentBanIndex();
+useEffect(() => {
+  console.log("recommendations updated:", recommendations);
+}, [recommendations]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col">
-      {/* TOP BAR: Blue Bans | Center Timer | Red Bans */}
-      <div className="container mx-auto px-4 pt-3">
+    <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col overflow-hidden">
+      <div className="w-full max-w-[1900px] mx-auto px-6 pt-3">
         <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-xl px-4 py-2 flex items-center justify-between">
-          <div className="w-[320px] flex justify-start">
-            <div className="flex gap-2">
-              {[...Array(5)].map((_, index) => {
-                const hero = blueBans[index];
-                const isActive = currentBanIndex === index;
-
-                return (
-                  <div
-                    key={`top-blue-ban-${index}`}
-                    className={`relative w-12 h-12 rounded-full overflow-hidden flex items-center justify-center
-                      ${hero ? "border border-gray-700 bg-gray-800" : "border border-dashed border-gray-600 bg-gray-900/40"}
-                      ${isActive ? "ring-2 ring-blue-400 animate-pulse" : ""}
-                    `}
-                  >
-                    {hero ? (
-                      <>
-                        <img
-                          src={hero.image}
-                          alt={hero.name}
-                          className="w-full h-full object-cover opacity-40"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <X
-                            className="w-4 h-4 text-red-500"
-                            strokeWidth={3}
-                          />
-                        </div>
-                      </>
-                    ) : (
-                      <span className="text-gray-500 text-xs">
-                        ?
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+          <div className="w-[360px] flex justify-start">
+            <BanSlotsRow
+            heroes = {blueBans}
+            activeIndex={blueBanActiveIndex}
+            side="blue"
+            align="left"
+            />
           </div>
 
-          {/* CENTER: BAN/PICK + TIMER */}
-          {/* CENTER: BAN/PICK + TIMER + ARROW */}
-          <div className="flex flex-col items-center justify-center">
-            <div className="text-xl font-bold leading-none">
-              {centerLabel}
-            </div>
-
-            {currentAction === "complete" ? (
-              <div className="text-green-400 text-sm font-semibold mt-1">
-                Complete
-              </div>
-            ) : (
-              <div className="flex items-center gap-2 mt-1">
-                {/* Left arrow slot (fixed width, doesn’t move layout) */}
-                <div className="w-5 h-5 flex items-center justify-center">
-                  <ChevronLeft
-                    className={`w-5 h-5 ${
-                      currentTeam === "blue"
-                        ? "text-blue-400 drop-shadow-[0_0_6px_currentColor]"
-                        : "opacity-0"
-                    }`}
-                  />
-                </div>
-
-                {/* Timer (fixed width, centered) */}
-                <div className="text-sm font-semibold tabular-nums w-[3ch] text-center">
-                  {timeRemaining}
-                </div>
-
-                {/* Right arrow slot (fixed width, doesn’t move layout) */}
-                <div className="w-5 h-5 flex items-center justify-center">
-                  <ChevronRight
-                    className={`w-5 h-5 ${
-                      currentTeam === "red"
-                        ? "text-red-400 drop-shadow-[0_0_6px_currentColor]"
-                        : "opacity-0"
-                    }`}
-                  />
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* RIGHT: RED BANS */}
-          <div className="w-[320px] flex justify-end">
-            <div className="flex gap-2">
-              {[...Array(5)].map((_, index) => {
-                const hero = redBans[index];
-                const isActive = currentBanIndex === 5 + index;
-
-                return (
-                  <div
-                    key={`top-red-ban-${index}`}
-                    className={`relative w-12 h-12 rounded-full overflow-hidden flex items-center justify-center
-                      ${hero ? "border border-gray-700 bg-gray-800" : "border border-dashed border-gray-600 bg-gray-900/40"}
-                      ${isActive ? "ring-2 ring-red-400 animate-pulse" : ""}
-                    `}
-                  >
-                    {hero ? (
-                      <>
-                        <img
-                          src={hero.image}
-                          alt={hero.name}
-                          className="w-full h-full object-cover opacity-40"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <X
-                            className="w-4 h-4 text-red-500"
-                            strokeWidth={3}
-                          />
-                        </div>
-                      </>
-                    ) : (
-                      <span className="text-gray-500 text-xs">
-                        ?
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* MAIN CONTENT AREA */}
-      <div className="flex-1 container mx-auto px-4 py-4 grid grid-cols-[180px_1fr_180px] gap-4">
-        {/* Blue Team Picks */}
-        <div className="space-y-2">
-          {[...Array(5)].map((_, index) => {
-            const hero = bluePicks[index];
-            const isActive =
-              currentAction === "pick" &&
-              currentTeam === "blue" &&
-              bluePicks.length === index;
-
-            return (
-              <div
-                key={`blue-pick-${index}`}
-                className={`relative rounded-lg overflow-hidden ${
-                  isActive
-                    ? "ring-2 ring-blue-400 ring-offset-1 ring-offset-gray-900 animate-pulse"
-                    : "border border-gray-700"
-                } bg-gray-800 h-24`}
-              >
-                {hero ? (
-                  <>
-                    <img
-                      src={hero.image}
-                      alt={hero.name}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-1">
-                      <div className="text-[10px] text-center truncate">
-                        {hero.name}
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-600 text-2xl">
-                      ?
-                    </span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Hero Grid */}
-        <div>
-          <HeroGrid
-            heroes={heroes}
-            onHeroSelect={handleHeroSelect}
-            bannedHeroIds={bannedHeroIds}
-            pickedHeroIds={pickedHeroIds}
+          <DraftHeader
             currentAction={currentAction}
+            currentTeam={currentTeam}
+            timeRemaining={timeRemaining}
+            hasDraftStarted={hasDraftStarted}
           />
-        </div>
 
-        {/* Red Team Picks */}
-        <div className="space-y-2">
-          {[...Array(5)].map((_, index) => {
-            const hero = redPicks[index];
-            const isActive =
-              currentAction === "pick" &&
-              currentTeam === "red" &&
-              redPicks.length === index;
+          <div className="w-[360px] flex justify-end items-center gap-2">
+            <DraftControls
+              hasDraftStarted={hasDraftStarted}
+              onStart={() => setHasDraftStarted(true)}
+              onReset={handleResetDraft}
+            />
 
-            return (
-              <div
-                key={`red-pick-${index}`}
-                className={`relative rounded-lg overflow-hidden ${
-                  isActive
-                    ? "ring-2 ring-red-400 ring-offset-1 ring-offset-gray-900 animate-pulse"
-                    : "border border-gray-700"
-                } bg-gray-800 h-24`}
-              >
-                {hero ? (
-                  <>
-                    <img
-                      src={hero.image}
-                      alt={hero.name}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-1">
-                      <div className="text-[10px] text-center truncate">
-                        {hero.name}
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-gray-600 text-2xl">
-                      ?
-                    </span>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+            <BanSlotsRow
+            heroes = {redBans}
+            activeIndex={redBanActiveIndex}
+            side="red"
+            align="right"
+            />
+          </div>
         </div>
       </div>
+
+  <div className="flex-1 w-full max-w-[1900px] mx-auto px-6 py-4 grid grid-cols-[140px_minmax(180px,220px)_minmax(0,1fr)_minmax(180px,220px)_140px] gap-4 min-h-0 overflow-hidden">
+    {/* BLUE PICKS */}
+    <div className="min-h-0">
+      <PickSlotsColumn
+        heroes={bluePicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="blue"
+      />
     </div>
+
+    {/* BLUE RECOMMENDATIONS */}
+    <div className="min-h-0">
+      <RecommendationBox
+        team="blue"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "blue"}
+      />
+    </div>
+
+    {/* CENTER */}
+    <div className="min-w-0 min-h-0 overflow-y-auto custom-scrollbar">
+      <HeroGrid
+        heroes={heroes}
+        onHeroSelect={handleHeroSelect}
+        bannedHeroIds={bannedHeroIds}
+        pickedHeroIds={pickedHeroIds}
+        currentAction={currentAction}
+      />
+    </div>
+
+    {/* RED RECOMMENDATIONS */}
+    <div className="min-h-0">
+      <RecommendationBox
+        team="red"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "red"}
+      />
+    </div>
+
+    {/* RED PICKS */}
+    <div className="min-h-0">
+      <PickSlotsColumn
+        heroes={redPicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="red"
+      />
+    </div>
+  </div>
+</div>
   );
 }
