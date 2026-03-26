@@ -1,0 +1,53 @@
+{
+  "source": "trained-feature-engineering-coordinate-search",
+  "objective": "maximize pick ndcg@3, then pick top-3, then ban ndcg@3, then ban top-3",
+  "adjusted_win_rate_smoothing_games": 2,
+  "flexibility_role_threshold": 0.15,
+  "pair_prior_games": 4,
+  "pick_validation_metrics": {
+    "top1_hit_rate": 0.4711111111111111,
+    "top3_hit_rate": 0.8555555555555555,
+    "top5_hit_rate": 0.9355555555555556,
+    "mean_reciprocal_rank": 0.668106211072878,
+    "mean_rank": 2.4244444444444446,
+    "median_rank": 2.0,
+    "ndcg_at_3": 0.6973750692619125,
+    "ndcg_at_5": 0.7302710161001812,
+    "query_count": 450.0
+  },
+  "ban_validation_metrics": {
+    "top1_hit_rate": 0.12444444444444444,
+    "top3_hit_rate": 0.2733333333333333,
+    "top5_hit_rate": 0.40444444444444444,
+    "mean_reciprocal_rank": 0.26882939441628173,
+    "mean_rank": 10.577777777777778,
+    "median_rank": 7.0,
+    "ndcg_at_3": 0.20878135915873208,
+    "ndcg_at_5": 0.262423643940962,
+    "query_count": 450.0
+  },
+  "search_candidates": {
+    "adjusted_win_rate_smoothing_games": [
+      1.0,
+      2.0,
+      5.0,
+      8.0,
+      15.0,
+      50.0
+    ],
+    "flexibility_role_threshold": [
+      0.0116,
+      0.0162,
+      0.0486,
+      0.15,
+      0.1809,
+      0.2308
+    ],
+    "pair_prior_games": [
+      1.0,
+      3.0,
+      4.0,
+      5.0
+    ]
+  }
+}

@@ -25,3 +25,27 @@ export interface DraftStep {
   team: Team;
   action: DraftAction;
 }
+
+export interface RecommendationRequest {
+  team: "blue" | "red";
+  blue_picks: string[];
+  red_picks: string[];
+  blue_bans: string[];
+  red_bans: string[];
+  top_k?: number;
+  strict_turn?: boolean;
+  rerank_pool_size?: number | null;
+}
+
+export interface Recommendation {
+  hero: string;
+  score: number;
+  reasons: string[];
+  rank: string;
+}
+
+export interface RecommendationResponse {
+  team: "blue" | "red";
+  recommendations: Recommendation[];
+  reasoning: string,
+}

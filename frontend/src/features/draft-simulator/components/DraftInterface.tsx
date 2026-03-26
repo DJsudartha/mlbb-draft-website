@@ -1,12 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import { HeroGrid } from "./HeroGrid";
-import type { Hero } from "../types/draft.ts";
+import type { Hero, Recommendation } from "../types/draft.ts";
 import { draftOrder } from "../data/draftOrder";
 import { heroes } from "../data/heroes";
 import { TIME_PER_ACTION, SLOT_COUNT } from "../constants/draft.ts";
 import { BanSlotsRow } from "./BanSlotsRow.tsx";
 import { DraftHeader } from "./DraftHeader.tsx";
 import { DraftControls } from "./DraftControls.tsx";
+import RecommendationBox  from "./RecommendationBox.tsx"
 import { PickSlotsColumn } from "./PickSlotsColumn.tsx";
 
 export function DraftInterface() {
@@ -18,6 +19,8 @@ export function DraftInterface() {
   const [redPicks, setRedPicks] = useState<Hero[]>([]);
   const [stepSelectionsCount, setStepSelectionsCount] = useState(0);
   const [hasDraftStarted, setHasDraftStarted] = useState(false);
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  
 
   const [bannedHeroIds, setBannedHeroIds] = useState<
     Set<number>
@@ -114,6 +117,12 @@ const handleResetDraft = () => {
   setHasDraftStarted(false);
 }
 
+  const blueBanActiveIndex =
+    currentAction === "ban" && currentTeam === "blue" ? blueBans.length : -1;
+
+  const redBanActiveIndex =
+    currentAction === "ban" && currentTeam === "red" ? redBans.length : -1;
+
 useEffect(() => {
   if(!hasDraftStarted) return;
   if (currentDraftIndex >= draftOrder.length) return;
@@ -146,17 +155,74 @@ useEffect(() => {
   return () => clearTimeout(id);
 }, [timeRemaining, currentDraftIndex, getRandomAvailableHero, applyHeroSelection]);
 
+useEffect(() => {
+  if (!hasDraftStarted) return;
+  if (!currentStep) return;
+
+  const payload = {
+    team: currentStep.team,
+    blue_picks: bluePicks.map((h) => h.name),
+    red_picks: redPicks.map((h) => h.name),
+    blue_bans: blueBans.map((h) => h.name),
+    red_bans: redBans.map((h) => h.name),
+    top_k: 3,
+    strict_turn: true,
+    rerank_pool_size: null,
+  };
+
+  console.log("Sending recommendation payload:", payload);
+
+  let cancelled = false;
+
+  async function fetchData() {
+    try {
+      if (!currentStep) return;
+      const endpoint =
+        currentStep.action === "ban"
+          ? "/advise-bans"
+          : "/advise-picks";
+
+      console.log("Posting to endpoint:", endpoint);
+
+      const res = await fetch(`http://127.0.0.1:8000/draft${endpoint}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
 
-  const blueBanActiveIndex =
-    currentAction === "ban" && currentTeam === "blue" ? blueBans.length : -1;
+      const data = await res.json();
 
-  const redBanActiveIndex =
-    currentAction === "ban" && currentTeam === "red" ? redBans.length : -1;
+      if (!cancelled) {
+        const recs = Array.isArray(data.recommendation.recommendations) 
+                    ? data.recommendation.recommendations 
+                    : [];
+        setRecommendations(recs);
+      }
+    } catch (err) {
+      console.error("Recommendation error:", err);
+      if (!cancelled) {
+        setRecommendations([]);
+      }
+    }
+  }
+
+  fetchData();
+
+  return () => {
+    cancelled = true;
+  };
+}, [bluePicks, redPicks, blueBans, redBans, currentStep, hasDraftStarted]);
+
+useEffect(() => {
+  console.log("recommendations updated:", recommendations);
+}, [recommendations]);
 
   return (
     <div className="h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col overflow-hidden">
-      <div className="container mx-auto px-4 pt-3">
+      <div className="w-full max-w-[1900px] mx-auto px-6 pt-3">
         <div className="bg-black/50 backdrop-blur-sm border border-white/10 rounded-xl px-4 py-2 flex items-center justify-between">
           <div className="w-[360px] flex justify-start">
             <BanSlotsRow
@@ -191,35 +257,56 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* MAIN CONTENT AREA */}
-      <div className="flex-1 container mx-auto px-4 py-4 grid grid-cols-[180px_1fr_180px] gap-4 min-h-0">
-        {/* Blue Team Picks */}
-        <PickSlotsColumn
-          heroes={bluePicks}
-          currentAction={currentAction}
-          currentTeam={currentTeam}
-          side="blue"
-        />
-
-        {/* Hero Grid */}
-        <div className="min-h-0 overflow-y-auto custom-scrollbar">
-          <HeroGrid
-            heroes={heroes}
-            onHeroSelect={handleHeroSelect}
-            bannedHeroIds={bannedHeroIds}
-            pickedHeroIds={pickedHeroIds}
-            currentAction={currentAction}
-          />
-        </div>
-
-        <PickSlotsColumn
-          heroes={redPicks}
-          currentAction={currentAction}
-          currentTeam={currentTeam}
-          side="red"
-        />
-
-      </div>
+  <div className="flex-1 w-full max-w-[1900px] mx-auto px-6 py-4 grid grid-cols-[140px_minmax(180px,220px)_minmax(0,1fr)_minmax(180px,220px)_140px] gap-4 min-h-0 overflow-hidden">
+    {/* BLUE PICKS */}
+    <div className="min-h-0">
+      <PickSlotsColumn
+        heroes={bluePicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="blue"
+      />
     </div>
+
+    {/* BLUE RECOMMENDATIONS */}
+    <div className="min-h-0">
+      <RecommendationBox
+        team="blue"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "blue"}
+      />
+    </div>
+
+    {/* CENTER */}
+    <div className="min-w-0 min-h-0 overflow-y-auto custom-scrollbar">
+      <HeroGrid
+        heroes={heroes}
+        onHeroSelect={handleHeroSelect}
+        bannedHeroIds={bannedHeroIds}
+        pickedHeroIds={pickedHeroIds}
+        currentAction={currentAction}
+      />
+    </div>
+
+    {/* RED RECOMMENDATIONS */}
+    <div className="min-h-0">
+      <RecommendationBox
+        team="red"
+        recommendations={recommendations}
+        visible={hasDraftStarted && currentTeam === "red"}
+      />
+    </div>
+
+    {/* RED PICKS */}
+    <div className="min-h-0">
+      <PickSlotsColumn
+        heroes={redPicks}
+        currentAction={currentAction}
+        currentTeam={currentTeam}
+        side="red"
+      />
+    </div>
+  </div>
+</div>
   );
 }
