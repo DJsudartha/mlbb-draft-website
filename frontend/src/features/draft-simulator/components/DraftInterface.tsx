@@ -184,7 +184,7 @@ useEffect(() => {
 
       console.log("Posting to endpoint:", endpoint);
 
-      const res = await fetch(`http://127.0.0.1:8000/draft${endpoint}`, {
+      const res = await fetch(`https://ml-2-8lkf.onrender.com/draft${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
