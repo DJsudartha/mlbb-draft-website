@@ -191,7 +191,7 @@ def tune_xgb_ranker_params(
         comparison_key = (ndcg_at_3, top3_hit_rate, top1_hit_rate)
 
         if best_metrics is None:
-            best_score = comparison_key[0]
+            # best_score = comparison_key[0]
             best_metrics = metrics
             best_params = candidate.copy()
             continue
@@ -202,7 +202,7 @@ def tune_xgb_ranker_params(
             float(best_metrics["top1_hit_rate"]),
         )
         if comparison_key > best_comparison_key:
-            best_score = comparison_key[0]
+            # best_score = comparison_key[0]
             best_metrics = metrics
             best_params = candidate.copy()
 
