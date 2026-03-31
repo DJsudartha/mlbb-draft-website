@@ -163,7 +163,7 @@ def tune_xgb_ranker_params(
 
     best_params: dict[str, Any] | None = None
     best_metrics: dict[str, float] | None = None
-    best_score = float("-inf")
+    # best_score = float("-inf")
 
     for candidate in candidate_params:
         model = XGBRanker(
