@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLBB Frontend UI"
+  short_description: "Draft simulator React UI work"
+  default_prompt: "Use $mlbb-frontend-draft-ui to update the MLBB draft simulator frontend."

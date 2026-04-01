@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLBB Modeling"
+  short_description: "Recommenders, advisors, and tests"
+  default_prompt: "Use $mlbb-modeling-advisors to modify recommender or advisor behavior."
