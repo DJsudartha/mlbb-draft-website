@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLBB Data Refresh"
+  short_description: "Scraping, rebuilds, and retraining"
+  default_prompt: "Use $mlbb-data-refresh-scripts to refresh MLBB data or retrain artifacts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLBB Backend API"
+  short_description: "FastAPI draft API changes"
+  default_prompt: "Use $mlbb-backend-draft-api to change the MLBB draft backend API."
