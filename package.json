@@ -1,0 +1,14 @@
+{
+  "name": "mlbb-draft-website",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:backend": "node scripts/run-python-module.mjs pytest -q",
+    "check": "npm run lint:frontend && npm run typecheck:frontend && npm run test && npm run build:frontend && npm run lint:backend",
+    "lint:frontend": "npm --prefix frontend run lint",
+    "lint:backend": "node scripts/run-python-module.mjs ruff check backend tests",
+    "typecheck:frontend": "npm --prefix frontend run typecheck",
+    "build:frontend": "npm --prefix frontend run build"
+  }
+}
